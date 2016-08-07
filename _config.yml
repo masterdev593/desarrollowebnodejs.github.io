@@ -14,7 +14,7 @@ repository: fizzvr/fizzvr.github.io
 google_analytics:
 
 rss: true
-permalink: /:year/:categories/:title
+permalink: /:year/:categories/:title.html
 markdown: kramdown
 feed:
     path: ups/feed.xml
