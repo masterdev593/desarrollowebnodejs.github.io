@@ -1,0 +1,36 @@
+title: FizzVR
+description: > 
+  Programador web Quito Ecuador
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fizzvr.github.io" 
+autor:
+    nombre: Vladimir Rodríguez
+    email: fizzvr@gmail.com
+    twitter_username: fizzvr
+    github_username:  fizzvr
+
+disqus:
+repository: fizzvr/fizzvr.github.io
+google_analytics:
+
+rss: true
+permalink: /:year/:categories/:title
+markdown: kramdown
+feed:
+    path: ups/feed.xml
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - package.json
+    - bower.json
+    - node_modules
+    - bower_components
+    - Gruntfile.js

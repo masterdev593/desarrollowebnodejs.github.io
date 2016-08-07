@@ -1,0 +1,21 @@
+{
+  "name": "app500",
+  "description": "",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Vladimir Rodríguez <fizzvr@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.3"
+  }
+}
