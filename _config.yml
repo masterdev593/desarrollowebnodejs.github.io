@@ -3,7 +3,7 @@ description: >
   Programador web Quito Ecuador
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fizzvr.github.io" 
-autor:
+author:
     nombre: Vladimir Rodríguez
     email: fizzvr@gmail.com
     twitter_username: fizzvr

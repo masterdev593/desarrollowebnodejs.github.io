@@ -17,6 +17,15 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  <h3>Cursos</h3>
+    {% assign sorted = (site.posts | where:"layout","post" | sort: 'hex' | inverse) %}
+
+        {% for page in sorted limit:5 %}
+            <p>
+            <a href="{{page.url}}">{{page.title}}</a> - {{page.date | date: "%-m/%-d/%y at %I:%M" }}
+            </p>
+        {% endfor %}
+
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
