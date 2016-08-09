@@ -54,8 +54,10 @@ require('time-grunt')(grunt);
                     ]
                 },
                 options: {
+                    notify: false,
                     watchTask: true,
-                    server: '_site/'
+                    server: '_site/',
+                    port: 3003
                 }
             }
         },

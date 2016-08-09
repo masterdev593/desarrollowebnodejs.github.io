@@ -1,6 +1,6 @@
 title: FizzVR
 description: > 
-  Programador web Quito Ecuador
+  Programación Web Quito Ecuador
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fizzvr.github.io" 
 author:
@@ -10,14 +10,14 @@ author:
     github_username:  fizzvr
 
 disqus:
-repository: fizzvr/fizzvr.github.io
+repository: https://github.com/fizzvr/fizzvr.github.io
 google_analytics:
 
 rss: true
 permalink: /:year/:categories/:title.html
 markdown: kramdown
 feed:
-    path: ups/feed.xml
+    path: rss/feed.xml
 
 gems:
   - jekyll-sitemap
