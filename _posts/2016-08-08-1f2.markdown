@@ -3,7 +3,7 @@ estado: todo
 layout: 'post'
 title: "Web app con AngularJs, NodeJS y MongoDB"
 hex: 498
-categories: back-end
+categories: b-end
 comentario: Usa la el entorno MEAN
 tags: ['nodejs','angularjs','mongodb']
 repositorio: 'fizzvr/1f2'
