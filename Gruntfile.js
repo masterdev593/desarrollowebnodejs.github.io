@@ -8,30 +8,33 @@ require('time-grunt')(grunt);
                     {
                         expand: true,
                         flatten: true,
+                        src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
+                          "bower_components/bootstrap/dist/css/bootstrap.min.css.map"],
+                        dest: 'act/bs4/'
+                    },
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: "bower_components/bootstrap/dist/js/bootstrap.min.js",
+                        dest: "act/bs4/"
+                    },
+                    {
+                        expand: true,
+                        flatten: true,
                         src:["bower_components/jquery/dist/jquery.min.js",
                              "bower_components/jquery/dist/jquery.min.map"],
                         dest: "act/jquery/"
                     },
-
                     {
                         expand: true,
                         flatten: true,
-                        src: ["bower_components/bootstrap/dist/js/bootstrap.min.js"],
-                        dest: "act/bs3/"
-                    },
-                    {
-                        expand: true,
-                        flatten: true,
-                        src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
-                          "bower_components/bootstrap/dist/css/bootstrap-theme.min.css"],
-                        dest: 'act/bs3/css/'
-                    },
-                    {
-                        expand: true,
-                        flatten: true,
-                        src: ["bower_components/bootstrap/dist/fonts/*"],
-                        dest: 'act/bs3/fonts/'
+                        src: "bower_components/tether/dist/js/tether.min.js",
+                        dest: "act/tether/"
                     }
+
+
+
+
                 ]
             }
         },
