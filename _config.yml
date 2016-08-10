@@ -1,6 +1,6 @@
 title: FizzVR
 description: > 
-  Programación Web Quito Ecuador
+  Programación Web NodeJS Quito Ecuador
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fizzvr.github.io" 
 author:
@@ -10,11 +10,12 @@ author:
     github_username:  fizzvr
 
 disqus:
-repository: https://github.com/fizzvr/fizzvr.github.io
+repository: fizzvr/fizzvr.github.io
 google_analytics:
 
 rss: true
 permalink: /:year/:categories/:title.html
+paginate: 5
 markdown: kramdown
 feed:
     path: rss/feed.xml
@@ -22,6 +23,7 @@ feed:
 gems:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
