@@ -12,4 +12,4 @@ author: FizzVR
 ---
 <img style="max-width: 100%; height: auto; display: block;" src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ page.hex }}-full.jpg">
 
-** Testing ** md
+**Testing** md
