@@ -3,7 +3,7 @@ require('load-grunt-tasks')(grunt);
 require('time-grunt')(grunt);
     grunt.initConfig({
         copy: {
-            jquery: {
+            activos: {
                 files: [
                     {
                         expand: true,
@@ -110,7 +110,9 @@ require('time-grunt')(grunt);
         }
     });
 // distribucion de los activos
-grunt.registerTask("serve", ['browserSync', 'exec:build']);
+grunt.registerTask("dist-activos", ['copy:activos']);
+// desarrollo en modo live
+grunt.registerTask("live", ['browserSync', 'exec:build']);
 // distribucion JS y CSS
 grunt.registerTask('dist-jscss', ['uglify', 'csso']);
 // tarea por default

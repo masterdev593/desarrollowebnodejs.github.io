@@ -13,7 +13,6 @@ js:
   - "/js/bootstrap.min.js"
   - "/js/main.js"
 ---
-
 <!doctype html>
 <html lang="es" itemscope itemtype="http://schema.org/LocalBusiness">
 {% include head.html %}
@@ -21,11 +20,8 @@ js:
         <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">descarga </a> uno mas moderno esto mejora tu experiencia en este sitio.</p>
         <![endif]-->
-
-
+        {% include nav.html %}
         {{ content }}
         {% include footer.html %}
-
-
     </body>
 </html>

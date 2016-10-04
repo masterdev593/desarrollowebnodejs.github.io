@@ -1,5 +1,5 @@
 {
-  "name": "FizzVR",
+  "name": "fizzvr",
   "description": "Desarrollo Web NodeJS • Quito Ecuador",
   "main": "Gruntfile.js",
   "authors": [
@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.3",
+    "bootstrap": "v4.0.0-alpha.4",
     "jquery": "3.1.0"
   }
 }
