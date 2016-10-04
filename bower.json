@@ -1,12 +1,12 @@
 {
-  "name": "app500",
-  "description": "",
+  "name": "FizzVR",
+  "description": "Desarrollo Web NodeJS • Quito Ecuador",
   "main": "Gruntfile.js",
   "authors": [
     "Vladimir Rodríguez <fizzvr@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://fizzvr.github.io",
   "private": true,
   "ignore": [
     "**/.*",
