@@ -1,7 +1,5 @@
 title: FizzVR
-description: > 
-  Desarrollo Web NodeJS Quito Ecuador
-baseurl: "" # the subpath of your site, e.g. /blog
+description: Desarrollo Web NodeJS • Quito Ecuador
 url: "https://fizzvr.github.io" 
 author:
     nombre: Vladimir Rodríguez
