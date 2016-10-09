@@ -1,6 +1,9 @@
+var moment;
 module.exports = function(grunt) {
 require('load-grunt-tasks')(grunt);
 require('time-grunt')(grunt);
+moment = require('moment');
+moment.locale('es');
     grunt.initConfig({
         copy: {
             activos: {
@@ -111,8 +114,8 @@ require('time-grunt')(grunt);
     });
 // distribucion de los activos
 grunt.registerTask("dist-activos", ['copy:activos']);
-// desarrollo en modo live
-grunt.registerTask("live", ['browserSync', 'exec:build']);
+// corriendo localmente
+grunt.registerTask("server", ['browserSync', 'exec:build']);
 // distribucion JS y CSS
 grunt.registerTask('dist-jscss', ['uglify', 'csso']);
 // tarea por default
