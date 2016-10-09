@@ -1,10 +1,29 @@
-var moment;
+/*
+* fizzvr Gruntfile
+*
+* Desarrollo Web NodeJS • Quito Ecuador
+*
+* Copyright (c) 2016 Vladimir Rodríguez <fizzvr@gmail.com> 
+* Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)
+* Para contacto y soporte: https://fizzvr.github.io
+*/
+
 module.exports = function(grunt) {
 require('load-grunt-tasks')(grunt);
 require('time-grunt')(grunt);
-moment = require('moment');
-moment.locale('es');
     grunt.initConfig({
+        // metadatos
+        leerJson: grunt.file.readJSON('package.json'),
+        estandarte: '/*\n' +
+            '* <%= leerJson.name %> v<%= leerJson.version %>\n' +
+            '*\n' +
+            '* <%= leerJson.description %>\n' +
+            '*\n' +
+            '* Copyright (c) 2016 <%= leerJson.author %> \n' +
+            '* Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)\n' + 
+            '* Para contacto y soporte: <%= leerJson.homepage %>\n' +
+            '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +                       
+            '*/\n\n',
         copy: {
             activos: {
                 files: [
@@ -96,28 +115,20 @@ moment.locale('es');
         csso: {
            main: {
                options: {
-                    banner: '/*\n'+
-                   '* <%= leerJson.name %> - <%= leerJson.url %>\n' +
-                   '*\n' +
-                   '* Copyright (c) 2016 <%= leerJson.author %> \n' +
-                   '* bajo licencia MIT \n' +
-                   '* Para todos los detalles y documentación: \n' +
-                   '* <%= leerJson.homepage %> \n' +
-                   '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +
-                   '*/\n\n'
+                    banner: '<%= estandarte %>'
                 },
                 files: {
-                  'cvr/vr1.min.css': ['src/public/css/cvr1.css']
+                  'act/vr/vr1.min.css': ['css/vr1.css']
                 }
             }
         }
     });
 // distribucion de los activos
-grunt.registerTask("dist-activos", ['copy:activos']);
+grunt.registerTask("distribuir-activos", ['copy:activos']);
 // corriendo localmente
 grunt.registerTask("server", ['browserSync', 'exec:build']);
 // distribucion JS y CSS
-grunt.registerTask('dist-jscss', ['uglify', 'csso']);
+grunt.registerTask('construir-bienes', ['csso']);
 // tarea por default
 grunt.registerTask('default', ['dist-activos']);
 };

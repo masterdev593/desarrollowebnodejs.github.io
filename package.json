@@ -6,8 +6,8 @@
   "url": "https://github.com/fizzvr/fizzvr.github.io",
   "author": "Vladimir Rodríguez <fizzvr@gmail.com>",
   "scripts": {
-    "postinstall": "bower cache clean && bower install && grunt dist-activos",
-    "desarrollo": "grunt live"
+    "postinstall": "bower cache clean && bower install && grunt distribuir-activos",
+    "start": "grunt server"
   },
   "license": "MIT",
   "engines": {
