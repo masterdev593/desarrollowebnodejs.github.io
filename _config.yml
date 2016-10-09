@@ -35,3 +35,5 @@ exclude:
     - bower_components
     - Gruntfile.js
     - vendor
+    - LICENCIA
+    - css
