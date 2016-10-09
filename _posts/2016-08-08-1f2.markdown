@@ -4,12 +4,15 @@ layout: 'post'
 title: "Web app con AngularJs, NodeJS y MongoDB"
 hex: 498
 categories: bend
-comentario: Usa la el entorno MEAN
+description: Usa el entorno MEAN
 tags: ['nodejs','angularjs','mongodb']
 repositorio: 'fizzvr/1f2'
 paginagh: 'http://fizzvr.github.io/1f2/'
 author: FizzVR
 ---
-<img style="max-width: 100%; height: auto; display: block;" src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ page.hex }}-full.jpg">
+# Increible
 
-**Testing** md
+Here is an example post to show how to use the new `excerpt` tag.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, suscipit, tempora. Qui sunt eveniet, cum beatae hic quia labore reiciendis delectus quaerat, quos velit enim voluptates iure numquam molestiae rem?
+<img style="max-width: 100%; height: auto; display: block;" src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ page.hex }}-full.jpg">

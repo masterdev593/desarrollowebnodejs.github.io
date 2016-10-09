@@ -3,12 +3,13 @@ layout: plantilla
 title: Desarrollo Web NodeJS • Quito Ecuador
 description: desarrollo web nodejs en quito ecuador fizzvr
 ---
+<section>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla at reiciendis reprehenderit cumque ipsum blanditiis, voluptates molestias obcaecati ratione! Expedita officia tempore qui sint quam deleniti, quidem dicta, necessitatibus adipisci.</p>
+  </div>
+</section>
 
-<div class="home">
-
-<h3>Proyectos</h3>
-
-  <ul class="post-list">
+ <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -19,16 +20,3 @@ description: desarrollo web nodejs en quito ecuador fizzvr
       </li>
     {% endfor %}
   </ul>
-  <h3>Desarrolando</h3>
-    {% assign sorted = (site.posts | where:"layout","post" | sort: 'hex' | inverse) %}
-
-        {% for page in sorted limit:5 %}
-            <p>
-            <a href="{{page.url}}">{{page.title}}</a> - {{page.date | date: "%-m/%-d/%y at %I:%M" }}
-            </p>
-        {% endfor %}
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
