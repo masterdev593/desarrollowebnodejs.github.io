@@ -30,8 +30,7 @@ require('time-grunt')(grunt);
                     {
                         expand: true,
                         flatten: true,
-                        src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
-                          "bower_components/bootstrap/dist/css/bootstrap.min.css.map"],
+                        src: ["bower_components/bootstrap/scss/bootstrap.scss"],
                         dest: 'act/bs4/'
                     },
                     {
@@ -58,6 +57,17 @@ require('time-grunt')(grunt);
 
 
                 ]
+            }
+        },
+        // tarea de distribucion CSS
+        csso: {
+           main: {
+               options: {
+                    banner: '<%= estandarte %>'
+                },
+                files: {
+                  'act/vr/vr1.min.css': ['css/vr1.css']
+                }
             }
         },
         exec: {
@@ -110,25 +120,14 @@ require('time-grunt')(grunt);
                     'jvr/vr1.min.js': ['src/public/js/jvr1.js']
                 }
             }
-        },
-       // tarea de distribucion CSS
-        csso: {
-           main: {
-               options: {
-                    banner: '<%= estandarte %>'
-                },
-                files: {
-                  'act/vr/vr1.min.css': ['css/vr1.css']
-                }
-            }
         }
     });
 // distribucion de los activos
-grunt.registerTask("distribuir-activos", ['copy:activos']);
+grunt.registerTask("construir-bienes", ['csso']);
 // corriendo localmente
-grunt.registerTask("server", ['browserSync', 'exec:build']);
+grunt.registerTask("desarrollo", ['browserSync', 'exec:build']);
 // distribucion JS y CSS
-grunt.registerTask('construir-bienes', ['csso']);
+grunt.registerTask("distribuir-activos", ['copy:activos', 'construir-bienes']);
 // tarea por default
-grunt.registerTask('default', ['dist-activos']);
+grunt.registerTask('default', ['distribuir-activos']);
 };

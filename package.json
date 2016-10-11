@@ -7,7 +7,8 @@
   "author": "Vladimir Rodríguez <fizzvr@gmail.com>",
   "scripts": {
     "postinstall": "bower cache clean && bower install && grunt distribuir-activos",
-    "start": "grunt server"
+    "start": "grunt desarrollo",
+    "test": "grunt"
   },
   "license": "MIT",
   "engines": {
