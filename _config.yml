@@ -9,22 +9,24 @@ author:
 
 disqus:
 repository: fizzvr/fizzvr.github.io
-google_analytics:
+google_analytics: A-222234
 
 rss: true
-permalink: /:year/:categories/:title/
+permalink: /2033/:categories/:title/
 paginate: 5
 markdown: kramdown
 feed:
-    path: rss/feed.xml
-
+    path: feed.xml
+sass:
+  style: compressed
 gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 
-# Exclude these files from your production _site
 exclude:
+    - npm-debug.log
     - Gemfile
     - Gemfile.lock
     - LICENSE
@@ -36,4 +38,3 @@ exclude:
     - Gruntfile.js
     - vendor
     - LICENCIA
-    - css

@@ -1,0 +1,6 @@
+{% if layout.js %}
+  {% for js in layout.js %}
+	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+  {% endfor %}
+{% endif %}
+{% include ana.html %}

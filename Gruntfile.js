@@ -15,7 +15,7 @@ require('time-grunt')(grunt);
         // metadatos
         leerJson: grunt.file.readJSON('package.json'),
         estandarte: '/*\n' +
-            '* <%= leerJson.name %> v<%= leerJson.version %>\n' +
+            '* <%= leerJson.name %>\n' +
             '*\n' +
             '* <%= leerJson.description %>\n' +
             '*\n' +
@@ -27,35 +27,23 @@ require('time-grunt')(grunt);
         copy: {
             activos: {
                 files: [
+                    // Copy from bootstrap source directly flex enabled.
                     {
                         expand: true,
                         flatten: true,
-                        src: ["bower_components/bootstrap/scss/bootstrap.scss"],
-                        dest: 'act/bs4/'
+                        src: ["bower_components/bootstrap/css/bootstrap.scss"],
+                        dest: 'act/css/'
                     },
                     {
                         expand: true,
                         flatten: true,
-                        src: "bower_components/bootstrap/dist/js/bootstrap.min.js",
-                        dest: "act/bs4/"
-                    },
-                    {
-                        expand: true,
-                        flatten: true,
-                        src:["bower_components/jquery/dist/jquery.min.js",
-                             "bower_components/jquery/dist/jquery.min.map"],
-                        dest: "act/jquery/"
-                    },
-                    {
-                        expand: true,
-                        flatten: true,
-                        src: "bower_components/tether/dist/js/tether.min.js",
-                        dest: "act/tether/"
+                        src: ["bower_components/bootstrap/dist/js/bootstrap.min.js",
+                            "bower_components/jquery/dist/jquery.min.js",
+                            "bower_components/jquery/dist/jquery.min.map",
+                            "bower_components/tether/dist/js/tether.min.js",
+                            "bower_components/particles.js/dist/particles.min.js"],
+                        dest: "act/js/" 
                     }
-
-
-
-
                 ]
             }
         },
@@ -66,7 +54,23 @@ require('time-grunt')(grunt);
                     banner: '<%= estandarte %>'
                 },
                 files: {
-                  'act/vr/vr1.min.css': ['css/vr1.css']
+                  'act/css/vr1.min.css': ['css/vr1.css'],
+                  'act/css/vr404.min.css' : ['css/vr404.css']
+                }
+            }
+        },
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        '_site/**/*.*'
+                    ]
+                },
+                options: {
+                    notify: false,
+                    watchTask: true,
+                    server: '_site/',
+                    port: 3004
                 }
             }
         },
@@ -81,22 +85,6 @@ require('time-grunt')(grunt);
             cmd: 'rsync --progress -a --delete -e "ssh -q" _site/ myuser@host:mydir/'
             }
           },
-        browserSync: {
-            dev: {
-                bsFiles: {
-                    src : [
-                        '_site/**/*.*'
-                    ]
-                },
-                options: {
-                    notify: false,
-                    watchTask: true,
-                    server: '_site/',
-                    port: 3003
-                }
-            }
-        },
-        
         //--------------------
         // DISTRIBUIR[JS&CSS]
 		// tarea de distribucion JS
