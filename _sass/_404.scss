@@ -1,0 +1,18 @@
+* {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	       box-sizing: border-box; 
+}
+
+html {
+	min-height:100%;
+	border-top:10px solid #ECEEF1;
+	border-bottom:10px solid #ECEEF1;
+	color: $color_de_texto;
+	font-weight: $ancho_de_letra_base;
+	font-size: $tamano_de_letra_base;
+	font-family: $familia_de_letra_base;
+	line-height: $alto_linea_base;
+}

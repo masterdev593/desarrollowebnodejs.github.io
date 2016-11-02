@@ -6,7 +6,7 @@
 * Copyright (c) 2016 Vladimir Rodríguez <fizzvr@gmail.com> 
 * Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)
 * Para contacto y soporte: https://fizzvr.github.io
-* 2016-10-31 12:10:03
+* 2016-10-31 12:10:06
 */
 
 *{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}a,html{color:#61666c}html{min-height:100%;border-top:10px solid #eceef1;border-bottom:10px solid #eceef1;font-weight:400;font-size:1em;font-family:'Open Sans',sans-serif;line-height:2em}body{padding:20px;-webkit-backface-visibility:hidden}code{font-family:consolas,monospace}a{text-decoration:none}a:hover{color:#2a2a2a}.wrapper{margin:0 auto;padding-top:20px;max-width:500px}.block,table{font-size:.875em}.block{margin:20px 0;padding:20px;color:#9099a3}table{width:100%;border-collapse:collapse}tr{outline:0;border:0}tr:hover td{background:#f6f6f6}th{text-align:left;font-size:.75em;padding-right:20px}th+th{width:65%}th+th+th+th{width:5%}tr td:first-of-type{padding-left:10px;padding-right:10px}td{padding:5px 0;outline:0;border:0;border-bottom:1px solid #edf1f5;vertical-align:middle;text-align:left;-webkit-transition:background 300ms ease;-moz-transition:background 300ms ease;-ms-transition:background 300ms ease;-o-transition:background 300ms ease;transition:background 300ms ease}td a{display:block}tr.parent a[href^="/"]{color:#9099a3}.parent a[href^="/"]:hover{color:#2281d0}.footer{text-align:center;font-size:.75em}

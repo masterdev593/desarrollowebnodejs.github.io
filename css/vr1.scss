@@ -1,0 +1,50 @@
+---
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$familia-de-letra-base: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$tamano-de-letra-base:   14px;
+$ancho-de-letra-base: 400;
+$alto-linea-base: 1.5;
+$small-font-size:  $tamano-de-letra-base * 0.875;
+
+$spacing-unit:     30px;
+
+$color-de-texto:       #404040;
+$color-de-fondo:   #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base"
+;

@@ -1,21 +1,58 @@
-* {
-	margin:0;
-	padding:0;
-	-webkit-box-sizing:border-box;
-	   -moz-box-sizing:border-box;
-	       box-sizing: border-box; 
+---
+---
+@charset "utf-8";
+
+// Our variables
+$familia_de_letra_base: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$tamano_de_letra_base:   32px;
+$ancho_de_letra_base: 500;
+$alto_linea_base: 2;
+$small-font-size:  $tamano-de-letra-base * 0.875;
+
+$spacing-unit:     30px;
+
+$color_de_texto:       #ccc;
+$color-de-fondo:   #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
 
-html {
-	min-height:100%;
-	border-top:10px solid #ECEEF1;
-	border-bottom:10px solid #ECEEF1;
-	color:#61666c;
-	font-weight:400;
-	font-size:1em;
-	font-family:'Open Sans', sans-serif;
-	line-height:2em;
-}
+
+@import
+        "404"
+;
+
+
+
+
+
+
+
+
+
 body {
 	padding:20px;
 	-webkit-backface-visibility:hidden;
