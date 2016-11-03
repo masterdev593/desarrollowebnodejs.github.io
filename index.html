@@ -3,18 +3,83 @@ layout: plantilla
 title: Desarrollo Web NodeJS • Quito Ecuador
 description: desarrollo web nodejs en quito ecuador fizzvr
 ---
+<div class="container">
+  <div class="row">
+    <div class="col-xs">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae voluptates aliquam ratione impedit illum ad modi minus, expedita aliquid ab, natus. Numquam cum dolorem architecto in, quisquam hic harum.
+    </div>
+    <div class="col-xs">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum fuga inventore praesentium eum laboriosam, molestias facere, saepe debitis sunt, temporibus quaerat dolor, cum quibusdam at alias dolore officia labore expedita!</div>
+      <div>Nulla magni quia commodi id, cupiditate nostrum unde tempora nam distinctio ullam doloribus iste animi, veritatis dolorem quod repellat alias aut et vitae! Amet animi, reprehenderit nobis quae natus beatae!</div>
+      <div>Molestias totam, commodi nihil eligendi beatae sequi, nemo, dolor tempora officiis minus molestiae modi aut itaque nam quae inventore officia eveniet ex. Laudantium consequatur facere facilis dignissimos harum nesciunt magni!</div>
+      <div>Ducimus quo, eius officia nulla aspernatur animi eos dignissimos quaerat aperiam deleniti commodi consectetur eveniet labore quod explicabo harum qui rerum corrupti sunt nisi quasi ab ullam illum fuga. Et.</div>
+      <div>Quasi cumque ratione et ipsam, odit, eligendi enim provident corporis illo ullam quisquam explicabo voluptate ipsa sequi nulla blanditiis alias perspiciatis iste veritatis nihil iusto molestias molestiae fugiat assumenda. Temporibus.</div>
+      <div>Id nulla consequuntur explicabo quod quasi molestiae, cupiditate officiis culpa perferendis impedit pariatur distinctio earum error obcaecati iste cum beatae minus excepturi aliquam deleniti incidunt? Libero quam, sed! Aliquid, fugiat?</div>
+    </div>
+    <div class="col-xs">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sequi incidunt soluta, aspernatur, adipisci inventore ab in quae non voluptates et ex, velit exercitationem labore libero cupiditate? Quo beatae, reprehenderit.</div>
+      <div>Repudiandae, inventore quas. Delectus debitis, minima tenetur labore accusamus a nemo ratione. Sint quasi, eos fugit error nihil quae sequi laboriosam deleniti blanditiis modi quibusdam, ducimus, ratione odio facilis nam.</div>
+      <div>Quaerat, iste totam commodi sint dignissimos. Quasi, tenetur ullam dolore nisi iure velit dolores. Dolor quasi voluptatum quidem facilis et, earum. Delectus eveniet facere, exercitationem fugit consequuntur quibusdam, tempora accusantium.</div>
+      <div>Pariatur ducimus, ratione ad veritatis recusandae sint beatae expedita reprehenderit laborum explicabo ipsum at laudantium est, numquam? Deleniti eaque blanditiis odio natus, exercitationem? Magnam laboriosam, deleniti quisquam inventore omnis laudantium.</div>
+    </div>
+  </div>
+</div>
+<div class="sec2">
+      <div class="container">
+  <div class="row flex-items-xs-top">
+    <div class="col-xs">
+      One of three columns
+    </div>
+    <div class="col-xs">
+      One of three columns
+    </div>
+    <div class="col-xs">
+      One of three columns
+    </div>
+  </div>
+  <div class="row flex-items-xs-middle">
+    <div class="col-xs">
+      One of three columns
+    </div>
+    <div class="col-xs">
+      One of three columns
+    </div>
+    <div class="col-xs">
+      One of three columns
+    </div>
+  </div>
+  <div class="row flex-items-xs-bottom">
+    <div class="col-xs">
+      One of three columns
+    </div>
+    <div class="col-xs">
+      One of three columns
+    </div>
+    <div class="col-xs">
+      One of three columns
+    </div>
+  </div>
+</div>
 
-<div class="posts-list">
+</div>
+
+
+
+
+
+<section>
+  <div class="container">
+    <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-	
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}  
+    <h2 class="post-title">{{ post.title }}</h2>
+  
+    {% if post.subtitle %}
+    <h3 class="post-subtitle">
+      {{ post.subtitle }}
+    </h3>
+    {% endif %}  
     </a>
 
     <p class="post-meta">
@@ -23,23 +88,26 @@ description: desarrollo web nodejs en quito ecuador fizzvr
   
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
   
    </article>
   {% endfor %}
 </div>
+  </div>
+</section>
+
 
 {% if paginator.total_pages > 1 %}
 <ul class="pager main-pager">
   {% if paginator.previous_page %}
   <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; +++++++</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">+++++++ &rarr;</a>
   </li>
   {% endif %}
 </ul>

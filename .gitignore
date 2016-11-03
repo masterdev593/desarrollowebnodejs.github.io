@@ -1,6 +1,10 @@
 _site
 .sass-cache
 .jekyll-metadata
-/bower_components/
-/node_modules/
-npm-debug.log
+bower_components
+node_modules
+*.log
+.ruby-version
+.bundle
+vendor/cache
+vendor/bundle

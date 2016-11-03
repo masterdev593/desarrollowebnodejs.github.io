@@ -13,12 +13,12 @@ google_analytics: A-222234
 
 rss: true
 permalink: /2033/:categories/:title/
-paginate: 5
+paginate: 1
 markdown: kramdown
 feed:
     path: feed.xml
-sass:
-  style: compressed
+# sass:
+#   style: compressed
 gems:
   - jekyll-sitemap
   - jekyll-feed
