@@ -10,16 +10,21 @@ body {
     font-size: $tamano-de-letra-base;
     color: $color_de_texto;
     padding-top: 51px;
+    background-color: #ccc;
 
 }
-// .navbar-fixed-right {
-//     position: fixed;
-//     top: 0;
-//     z-index: 1030;
-//     left: 0;
 
-// }
+.navbar-fixed-right {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    right: 0;
+    width: 190px;
 
+}
+.navbar-nav .nav-item+.nav-item {
+    margin-left: 0;
+}
 .navbar {
 
     margin-bottom: 0;
@@ -27,6 +32,7 @@ body {
     text-transform: uppercase;
     font-family: $familia-de-letra-base;
     background-color: rgba(0, 0, 0, 0.9);
+  
 
 }
 .mini-ec {
@@ -52,7 +58,9 @@ body {
     outline: 0;
     background-color: rgba(255,255,255,.2);
 }
-
+.navbar-toggler:focus {
+    outline: 0;
+}
 #headerwrap {
 	background: $fondo_imagen no-repeat center top;
 	margin-top: -50px;
