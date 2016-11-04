@@ -12,13 +12,13 @@ body {
     padding-top: 51px;
 
 }
-.navbar-fixed-right {
-    position: fixed;
-    top: 0;
-    z-index: 1030;
-    left: 0;
+// .navbar-fixed-right {
+//     position: fixed;
+//     top: 0;
+//     z-index: 1030;
+//     left: 0;
 
-}
+// }
 
 .navbar {
 
@@ -28,6 +28,29 @@ body {
     font-family: $familia-de-letra-base;
     background-color: rgba(0, 0, 0, 0.9);
 
+}
+.mini-ec {
+    background: url("../ivr/ec.png") no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+}
+.navbar-custom a {
+    color: #f8f8f8;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
 }
 
 #headerwrap {
