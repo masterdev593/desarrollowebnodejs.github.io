@@ -9,8 +9,8 @@ body {
     font-family:  $familia-de-letra-base;
     font-size: $tamano-de-letra-base;
     color: $color_de_texto;
-    padding-top: 51px;
-    background-color: #ccc;
+    padding-top: 42px;
+    background-color: #020202;
 
 }
 
@@ -28,6 +28,7 @@ body {
 .navbar {
 
     text-transform: uppercase;
+    padding: 2px;
    // font-family: $familia-de-letra-base;
 
 }
