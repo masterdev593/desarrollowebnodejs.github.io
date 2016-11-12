@@ -6,20 +6,28 @@
         "base"
 ;
 body {
-    font-family:  $familia-de-letra-base;
-    font-size: $tamano-de-letra-base;
-    color: $color_de_texto;
-    padding-top: 42px;
-    background-color: #020202;
+    //font-family:  $familia-de-letra-base;
+    //font-size: $tamano-de-letra-base;
+    //color: $color_de_texto;
+    // padding-top: 1px;
+    //background-color: #020202;
+    background: #020202 url('../ivr/art-19.jpg');
 
 }
 
+#particulas {
+  position: fixed;
+  // display: flex;
+  // top: 0;
+  // left: 0;
+  // z-index: 1031;
+}
 .navbar-fixed-right {
     position: fixed;
     top: 0;
     z-index: 1030;
     right: 0;
-    width: 190px;
+    width: 125px;
 
 }
 .navbar-nav .nav-item+.nav-item {
@@ -35,6 +43,8 @@ body {
 .navbar-toggler {
     border: 1px solid rgba(255,255,255,.3);
     background-color: rgba(6, 6, 6, 0.9);
+    width: 2em;
+    padding: .5rem .5rem;
 }
 
 .navbar-toggler:focus {
@@ -63,6 +73,18 @@ body {
     outline: 0;
     background-color: rgba(255,255,255,.2);
 }
+
+.contenedor2 {
+    position: relative;
+    //border: 1px solid #7fc328;
+    background-color: rgba(6, 6, 6, 0.9);
+    color: #563232;
+    padding: 20px 30px;
+    margin: 20px 0;
+  //border-bottom: 1px solid #e9e9e9;
+
+}
+
 #headerwrap {
 	background: $fondo_imagen no-repeat center top;
 	margin-top: -50px;
