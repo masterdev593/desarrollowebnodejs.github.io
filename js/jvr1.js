@@ -4,10 +4,10 @@
         function init()
         {
             $('#navbar-collapse ul li a').click(function() {
-                $('.navbar-toggler:visible').click();
+                $('.close:visible').click();
             });
             $(window).scroll(function() {
-                 if ($(".navbar-toggler").offset().top > 40) {
+                 if ($(".close").offset().top > 40) {
                     $("#navbar-collapse").removeClass("in");
                     $(".close").blur();
                 } 
