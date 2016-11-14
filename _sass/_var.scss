@@ -1,20 +1,17 @@
+$familia_de_letra_base:	'Open Sans';
+$familia_de_letra_nav:	'Lora';
+$color_de_texto:	#404040;
+$color_de_fondo:	#020202;
+$fondo_imagen:	url('../ivr/art-19.jpg');
 
 
-// Our variables
-$familia-de-letra-base: 'Open Sans';
-$familia-de-letra-nav: "Lora";
+
 $tamano-de-letra-base:   14px;
 $ancho-de-letra-base: 400;
 $alto-linea-base: 1.5;
 $small-font-size:  $tamano-de-letra-base * 0.875;
-
 $spacing-unit:     30px;
-
-$color_de_texto:       #404040;
-$color_de_fondo:   #020202;
-$fondo_imagen: url('../ivr/art-19.jpg');
 $brand-color:      #2a7ae2;
-
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);

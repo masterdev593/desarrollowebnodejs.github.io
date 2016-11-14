@@ -1,71 +1,53 @@
 ---
 ---
 @charset "utf-8";
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base"
-;
-body {
-    font-family:  $familia-de-letra-base;
-    //font-size: $tamano-de-letra-base;
-    //color: $color_de_texto;
-    // padding-top: 1px;
-    background-color: $color_de_fondo;
-}
 
+@import
+    "var"
+;
+
+body {
+    font-family:  $familia_de_letra_base;
+    color: $color_de_texto;
+    background: $color_de_fondo;
+}
 #particulas {
-  position: fixed;
+    position: fixed;
 }
 .navbar-fixed-right {
+    font-family: $familia_de_letra_nav;
     position: fixed;
     top: 20px;
-    z-index: 1030;
     right: 0;
     width: 125px;
-    font-family: $familia-de-letra-nav;
-
+    z-index: 1030;
 }
 .navbar-nav .nav-item+.nav-item {
     margin-left: 0;
 }
-//.navbar {
-    //text-transform: uppercase;
-    //padding: .5rem;
-//}
-// .navbar-toggler {
-//     border: 1px solid rgba(255,255,255,.3);
-//     background-color: rgba(6, 6, 6, 0.9);
-//     width: 2em;
-//     padding: .5rem .5rem;
-// }
-
 .close:focus {
-     outline: 0;
+    outline: 0;
 }
 .mini-ec {
     background: url("../ivr/ec.png") no-repeat;
     display: flex;
     width: 20px;
     height: 20px;
-
 }
 .navbar-custom a {
     color: #f8f8f8;
 }
-
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
-
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
     background-color: rgba(255,255,255,.2);
 }
-
 .contenedor2 {
     position: relative;
     border-bottom: 1px dotted #7fc328;
@@ -74,7 +56,6 @@ body {
     padding: 20px 30px;
     margin: 20px 0;
 }
-
 #headerwrap {
 	background: $fondo_imagen no-repeat center top;
 	margin-top: -50px;
