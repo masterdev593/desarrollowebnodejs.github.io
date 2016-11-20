@@ -17,8 +17,8 @@ paginate: 1
 markdown: kramdown
 feed:
     path: feed.xml
-# sass:
-#   style: compressed
+sass:
+   style: compressed
 gems:
   - jekyll-sitemap
   - jekyll-feed
@@ -38,3 +38,4 @@ exclude:
     - Gruntfile.js
     - vendor
     - LICENCIA
+    - js
