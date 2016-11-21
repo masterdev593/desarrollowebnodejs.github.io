@@ -9,7 +9,7 @@
 body {
     font-family:  $familia_de_letra_base;
     color: $color_de_texto;
-    background: $color_de_fondo;
+    background: $color_de_fondo $fondo_imagen;
 }
 #particulas {
     position: fixed;
