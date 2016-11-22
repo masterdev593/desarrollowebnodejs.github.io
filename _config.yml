@@ -38,3 +38,4 @@ exclude:
     - Gruntfile.js
     - vendor
     - LICENCIA
+    - js

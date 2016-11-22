@@ -1,6 +1,6 @@
 {
   "name": "fizzvr",
-  "description": "Desarrollo Web NodeJS • Quito Ecuador",
+  "description": "Desarollo Web NodeJS • Quito Ecuador",
   "main": "Gruntfile.js",
   "authors": [
     "Vladimir Rodríguez <fizzvr@gmail.com>"
@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap": "v4.0.0-alpha.4",
-    "particles.js": "git@github.com:fizzvr/particles.js.git#^1.0.2"
+    "particles.js": "git@github.com:fizzvr/particles.js.git#^1.0.2",
+    "animate.css": "^3.5.2"
   }
 }

@@ -14,15 +14,20 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		leerJson: grunt.file.readJSON('package.json'),
 		estandarte: '/*\n' +
-		'* <%= leerJson.name %>\n' +
+		'* <%= leerJson.name %> Version: <%= leerJson.version %>\n' +
 		'*\n' +
 		'* <%= leerJson.description %>\n' +
 		'*\n' +
 		'* Copyright (c) 2016 <%= leerJson.author %> \n' +
 		'* Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)\n' + 
-		'* Para contacto y soporte: <%= leerJson.homepage %>\n' +
-		'* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +                       
+		'* Contacto / Soporte: <%= leerJson.homepage %>\n' +                    
 		'*/\n\n',
+		watch: {
+			scripts: {
+			    files: 'js/*',
+			    tasks: 'uglify',
+		  },
+		},
 		uglify: {
 			main: {
 				options: {
@@ -40,6 +45,12 @@ module.exports = function(grunt) {
 				{
 					expand: true,
 					flatten: true,
+					src: ["bower_components/animate.css/animate.min.css"],
+					dest: "act/css/" 
+				},
+				{
+					expand: true,
+					flatten: true,
 					src: ["bower_components/bootstrap/dist/js/bootstrap.min.js",
 					"bower_components/jquery/dist/jquery.min.js",
 					"bower_components/jquery/dist/jquery.min.map",
@@ -54,10 +65,13 @@ module.exports = function(grunt) {
 			dev: {
 				bsFiles: {
 					src : [
-					'_site/**/*.*'
-					]
+						'_site/**/*.*',
+						'act/**/*.*'					]
 				},
 				options: {
+					open: false,
+                    online: false,
+                    background: true,
 					notify: false,
 					watchTask: true,
 					server: '_site/',
@@ -77,8 +91,9 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-	grunt.registerTask("construir-bienes", ['uglify']);
-	grunt.registerTask("distribuir-activos", ['copy:activos', 'construir-bienes']);
+	grunt.registerTask("construir_bienes", ['uglify']);
+	grunt.registerTask("distribuir_activos", ['copy:activos', 'construir_bienes']);
+	grunt.registerTask("deploy", ['distribuir_activos', 'exec:server']);
 	grunt.registerTask("desarrollo", ['browserSync', 'exec:build']);
-	grunt.registerTask('default', ['distribuir-activos', 'desarrollo']);
+	grunt.registerTask('default', ['desarrollo']);
 };

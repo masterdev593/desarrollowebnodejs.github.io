@@ -1,8 +1,7 @@
   $(document).ready(function() {
             init();
         });
-        function init()
-        {
+        function init() {
             $('#navbar-collapse ul li a').click(function() {
                 $('.close:visible').click();
             });
@@ -17,4 +16,5 @@
                 color: '#7fc328',
                 connectParticles: true
             });
+            $('#hache1').addClass('animated bounceInUp');
         }

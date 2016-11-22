@@ -1,14 +1,14 @@
 {
   "name": "fizzvr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desarrollo Web NodeJS • Quito Ecuador",
   "homepage": "https://fizzvr.github.io",
   "url": "https://github.com/fizzvr/fizzvr.github.io",
   "author": "Vladimir Rodríguez <fizzvr@gmail.com>",
   "scripts": {
-    "postinstall": "bower cache clean && bower install && grunt distribuir-activos",
-    "start": "grunt",
-    "test": "grunt distribuir-activos"
+    "postinstall": "bower cache clean && bower install && distribuir_activos",
+    "test": "grunt distribuir_activos",
+    "start": "grunt"
   },
   "license": "MIT",
   "engines": {
@@ -31,6 +31,7 @@
     "moment": "^2.15.1"
   },
   "devDependencies": {
+    "grunt-contrib-watch": "^1.0.0",
     "load-grunt-tasks": "^3.5.0",
     "time-grunt": "^1.4.0"
   },
