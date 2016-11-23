@@ -13,6 +13,7 @@ body {
 }
 #particulas {
     position: fixed;
+    z-index: -1;
 }
 .navbar-fixed-right {
     font-family: $familia_de_letra_nav;
@@ -56,12 +57,17 @@ body {
     padding: 20px 30px;
     margin: 20px 0;
 }
-#headerwrap {
-	background: $fondo_imagen no-repeat center top;
+.box {
+  background-color: rgba(6, 6, 6, 0.9);
+  margin-bottom: 20px;
+  padding: 30px 15px;    
+}  
+.headerwrap {
+	background: $fondo_imagen2 center center fixed;
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
-	background-attachment: relative;
+
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
@@ -75,4 +81,57 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.grid {
+    max-width: 69em;
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+}
+.grid li {
+
+    float: left;
+    padding: 7px;
+    width: 33%;
+
+}
+.grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
+    opacity: 1;
+}
+.grid li a, .grid li img {
+    outline: 0;
+    border: 0;
+    display: block;
+    max-width: 100%}
+.grid img {
+    opacity: .7;
+}
+.grid img:hover {
+    opacity: 1;
+}
+.grid.effect-2 li.animate {
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    transform: translateY(200px);
+    
+    -webkit-animation: moveUp .65s ease forwards;
+    -moz-animation: moveUp .65s ease forwards;
+    animation: moveUp .65s ease forwards;
+}
+@-webkit-keyframes moveUp {
+    to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+}
+}@-moz-keyframes moveUp {
+    to {
+    -moz-transform: translateY(0);
+    opacity: 1;
+}
+}@keyframes moveUp {
+    to {
+    transform: translateY(0);
+    opacity: 1;
+}
 }
