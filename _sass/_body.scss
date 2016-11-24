@@ -1,0 +1,26 @@
+// html {
+//   position: relative;
+//   min-height: 100%;
+// }
+// body {
+//   margin-bottom: 60px;
+// }
+body {
+    font-family:  $familia_de_letra_base;
+    color: $color_de_texto;
+    background: $color_de_fondo;
+}
+#particulas {
+    position: fixed;
+    z-index: -1;
+}
+.caja {
+  background-color: rgba(6, 6, 6, 0.9);
+  margin-bottom: 20px;
+  padding: 30px 15px;
+  border: 0.5px dotted #7fc328;
+  position: relative;    
+} 
+.caja.primera {
+  margin-top: -25px;
+}

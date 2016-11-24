@@ -14,8 +14,7 @@
             Particles.init({
                 selector: '#particulas',
                 color: '#7fc328',
-                connectParticles: false
+                connectParticles: true
             });
             $('#hache1').addClass('animated bounceInUp');
-
         }

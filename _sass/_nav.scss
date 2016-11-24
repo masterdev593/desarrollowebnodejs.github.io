@@ -1,0 +1,34 @@
+.navbar-fixed-right {
+    font-family: $familia_de_letra_nav;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: 125px;
+    z-index: 1030;
+}
+.navbar-nav .nav-item+.nav-item {
+    margin-left: 0;
+}
+.close:focus {
+    outline: 0;
+}
+.mini-ec {
+    background: url("../ivr/ec2.png") no-repeat;
+    display: flex;
+    width: 32px;
+    height: 35px;
+}
+.navbar-custom a {
+    color: #f8f8f8;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+}
