@@ -69,10 +69,9 @@ module.exports = function(grunt) {
 						'act/**/*.*'					]
 				},
 				options: {
-					open: false,
                     online: false,
                     background: true,
-					notify: false,
+					notify: true,
 					watchTask: true,
 					server: '_site/',
 					port: 3004

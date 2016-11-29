@@ -13,7 +13,7 @@
             });
             Particles.init({
                 selector: '#particulas',
-                color: '#7fc328',
+                color: '#2CA0C7',
                 connectParticles: true
             });
             $('#hache1').addClass('animated bounceInUp');
