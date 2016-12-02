@@ -1,7 +1,7 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)
 [![Build Status](https://travis-ci.org/fizzvr/fizzvr.github.io.svg?branch=master)](https://travis-ci.org/fizzvr/fizzvr.github.io)
 
-Proyecto made by NodeJS
+Proyecto NodeJS y Ruby
 =========================
 
 1. Clonar este repositorio, instalar dependencias y correr el servidor
@@ -13,5 +13,5 @@ Proyecto made by NodeJS
 	npm start
 	```
 
-1. Abrir el navegador [http://localhost:9778/](http://localhost:9778/)
-1. Comenzar editando el directorio `src`
+1. Hackeando en [http://localhost:3004/](http://localhost:3004/)
+
