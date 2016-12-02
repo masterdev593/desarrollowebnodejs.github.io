@@ -1,7 +1,7 @@
 .headerwrap {
 	background: $fondo_imagen center center fixed;
 	margin-top: -50px;
-	padding-top:120px;
+	padding-top:200px;
 	text-align:center;
 	min-height: 750px;
 	position: relative;
@@ -15,11 +15,14 @@
     -o-background-size: cover;
     background-size: cover;
     opacity: .8;
+    margin: 4px;
 }
 .pos-f-t {
     top: 4rem;
 }
-
+.pos-f-ti {
+    top: 10rem;
+}
 .social a {
     background: #393939;
     padding:15px 5px;
