@@ -1,7 +1,18 @@
+#presentacion h1 {
+    color: #2CA0C7;
+}
+.intro-text {
+    color: #f8f8f8;
+    font-size: 18px;
+    font-weight: bold;
+}
+.pad {
+    padding: 25px 0;
+}
 .headerwrap {
 	background: $fondo_imagen center center fixed;
 	margin-top: -50px;
-	padding-top:200px;
+	padding-top: 125px;
 	text-align:center;
 	min-height: 750px;
 	position: relative;
@@ -19,9 +30,8 @@
 }
 .pos-f-t {
     top: 4rem;
-}
-.pos-f-ti {
-    top: 10rem;
+    z-index: 0;
+    max-width: 0;
 }
 .social a {
     background: #393939;
@@ -30,90 +40,38 @@
     opacity: .5;
     border-radius: .25rem;
 }
-
 .social a:hover {opacity: 1;}
-
+.headerwrap li
+{
+    background-image: url('../ivr/vr-skills.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+    //display:inline-block;
+    text-indent:-9999px;
+}
+    .headerwrap li.nodejs
+    {
+        background-position: 0 0;
+    }
+    .headerwrap li.angularjs
+    {
+        background-position: -64px 0;
+    }
+    .headerwrap li.mongodb
+    {
+        background-position: -128px 0;
+    }
+.headerwrap h1 {
+    margin: 0 0 35px;
+    font-family: $familia_de_letra_nav;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
 .barra {
     position: absolute;
     width: 100%;
     bottom: 20px;
-    //bottom: 0;
-    min-height: 6rem;
-    line-height: 60px; /* Vertically center the text there */
-  //  opacity: 1;
-}
-
-#logo {
-    font-family: $familia_de_letra_nav;
-    font-size: 40px;
-
-    z-index:1000;
-    color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-#main-nav{
-
-    z-index:1001;
-}
-#main-nav ul {
-    margin: 0; 
-    padding:0;
-}
-#main-nav ul li { 
-    list-style: none;
-    display: inline;
-    padding-right: 10px;
-    padding-left: 10px;
-    //border-left: 1px solid #b7b7b7;
-}
-#main-nav ul li a.active {color: #ffa800;}
-
-
-
-
-
-
-
-
-
-
-.social-nav {
-    position:absolute;
-    top: 0px;
-    left: 40px;
-}
-.social-nav ul {margin: 0; padding:0;}
-.social-nav ul li{
-    list-style: none;
-    display:block;
-    float: left;
-    background: #393939;
-    padding:100px 10px 5px 10px;
-    margin: 1px;
-    opacity: .5;
-}
-.social-nav ul li:hover {opacity: 1;}
-
-
-
-.content { 
-    float:left;
-    margin:40px;
-    position:absolute;
-    top:200px;
-    width:600px;
-    z-index:9999;
-    -webkit-font-smoothing:antialiased;
+    //min-height: 6rem;
+    //line-height: 60px; 
 }

@@ -18,3 +18,6 @@
             });
             $('#hache1').addClass('animated bounceInUp');
         }
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
