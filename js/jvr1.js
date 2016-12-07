@@ -16,7 +16,6 @@
                 color: '#2CA0C7',
                 connectParticles: true
             });
-            $('#hache1').addClass('animated bounceInUp');
         }
         $(function () {
           $('[data-toggle="tooltip"]').tooltip()

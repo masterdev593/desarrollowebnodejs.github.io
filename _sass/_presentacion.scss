@@ -2,7 +2,9 @@
     color: #2CA0C7;
 }
 .intro-text {
-    color: #f8f8f8;
+    //color: #f8f8f8;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -34,13 +36,17 @@
     max-width: 0;
 }
 .social a {
+     
     background: #393939;
     padding:15px 5px;
     margin: 1px;
     opacity: .5;
     border-radius: .25rem;
 }
-.social a:hover {opacity: 1;}
+.social a:hover {
+    background: transparent;
+    //opacity: 1;
+}
 .headerwrap li
 {
     background-image: url('../ivr/vr-skills.png');
@@ -69,7 +75,7 @@
     font-weight: 700;
 }
 .barra {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 20px;
     //min-height: 6rem;
