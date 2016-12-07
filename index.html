@@ -80,16 +80,22 @@ description: desarrollo web nodejs en quito ecuador fizzvr
 <section id="proyectos">
 	<div class="container">
 		<div class="row caja rounded">
-			<ul class="grid effect-2" id="grid">
-				<li><a href="singleproject.html"><img src="ivr/proyectos/gallery-img-495-full.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="ivr/proyectos/gallery-img-496-full.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="ivr/proyectos/gallery-img-498-full.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="ivr/proyectos/gallery-img-499-full.jpg"></a></li>
-
-			</ul>
+			<div class="mozaique thumbs-5">
+				{% for post in site.posts %}
+				<div class="thumb-block">
+					<div class="thumb-inside">
+					<div class="thumb"><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ post.hex }}-full.jpg"></a></div>
+						<p><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
+						<!--   <p class="metadata"><span class="bg">{{ post.excerpt }}</span></p> -->
+						<p class="metadata"><span class="bg"><span class="duration">{{ post.date | date: "%b, %Y" }}</span>
+							{{ post.hex }}</span></p>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 <section id="blog">
 	<div class="container">

@@ -1,0 +1,19 @@
+---
+estado: dev
+layout: 'post'
+title: 'CreateJS. Juegos interactivos con HTML5'
+hex: 499
+categories: fend
+description: Crea juegos multiplataforma con HTML5 y JavaScript
+tags: ['Html','CreateJS']
+repositorio: 'fizzvr/1f3'
+paginagh: 'http://fizzvr.github.io/1f3/'
+author: FizzVR
+---
+# Awesome
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus alias voluptas, nemo aliquid tempore similique asperiores impedit iste, in assumenda quis sint officia veniam reprehenderit officiis quisquam tenetur sapiente, laudantium!
+
+The excerpt tag provides a quick and easy way to tease a post by exposing only the first paragraph such as on a blog index page.
+<img style="max-width: 100%; height: auto; display: block;" src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ page.hex }}-full.jpg">
+<script src="https://gist.github.com/fizzvr/0db78b0c4befb7d92ed9.js"></script>
