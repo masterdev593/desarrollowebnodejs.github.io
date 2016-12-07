@@ -84,10 +84,10 @@ description: desarrollo web nodejs en quito ecuador fizzvr
 				{% for post in site.posts %}
 				<div class="thumb-block">
 					<div class="thumb-inside">
-					<div class="thumb"><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ post.hex }}-full.jpg"></a></div>
+					<div class="thumb"><a href="{{ site.baseurl }}{{ post.url }}"><img class="video-pic" src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ post.hex }}-full.jpg"></a></div>
 						<p><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
 						<!--   <p class="metadata"><span class="bg">{{ post.excerpt }}</span></p> -->
-						<p class="metadata"><span class="bg"><span class="duration">{{ post.date | date: "%b, %Y" }}</span>
+						<p class="text-uppercase metadata"><span class="bg"><span class="duration">{{ post.date | date: "%b, %Y" }}</span>
 							{{ post.hex }}</span></p>
 						</div>
 					</div>

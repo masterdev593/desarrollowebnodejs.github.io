@@ -16,7 +16,5 @@
                 color: '#2CA0C7',
                 connectParticles: true
             });
+            $('[data-toggle="tooltip"]').tooltip();
         }
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
