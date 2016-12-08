@@ -3,7 +3,7 @@
 *
 * Desarrollo Web NodeJS • Quito Ecuador
 *
-* Copyright (c) 2016 Vladimir Rodríguez <fizzvr@gmail.com> 
+* Copyright (c) 2017 Vladimir Rodríguez <fizzvr@gmail.com>
 * Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)
 * Para contacto y soporte: https://fizzvr.github.io
 */
