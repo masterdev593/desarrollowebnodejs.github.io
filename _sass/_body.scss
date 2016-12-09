@@ -25,3 +25,14 @@ body {
 .caja.primera {
   margin-top: -25px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    font-family: $familia_intro;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
