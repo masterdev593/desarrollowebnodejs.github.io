@@ -1,0 +1,24 @@
+{
+    "jslint.options": {
+        "vars": true,
+        "plusplus": true,
+        "devel": true,
+        "nomen": true,
+        "maxerr": 50,
+        "es5": true
+    },
+    "defaultExtension": "js",
+    "language": {
+        "javascript": {
+            "linting.prefer": "JSHint",
+            "linting.usePreferredOnly": true
+    },
+    "fonts.fontSize": "16px",
+    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+    "linting.collapsed": true,
+    "useTabChar": false,
+    "spaceUnits": 2,
+    "themes.theme": "dark-theme"
+
+ }
+}
