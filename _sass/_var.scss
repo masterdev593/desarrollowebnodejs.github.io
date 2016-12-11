@@ -4,8 +4,13 @@ $familia_intro: 'Bungee', cursive;
 $familia_intro_text: 'Oswald', sans-serif;
 $color_de_texto:	#404040;
 $color_de_fondo:	#060b0e;
+$color_de_fondo2:	green;
+$color_de_fondo3:	blue;
 $fondo_imagen:	url('../ivr/lander4.jpg');
 $fondo_imagenP:	url('../ivr/lander2.jpg');
+
+
+
 $tamano-de-letra-base:   14px;
 $ancho-de-letra-base: 400;
 $alto-linea-base: 1.5;
@@ -22,5 +27,15 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
 
-
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
