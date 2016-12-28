@@ -1,17 +1,70 @@
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)
-[![Build Status](https://travis-ci.org/fizzvr/fizzvr.github.io.svg?branch=master)](https://travis-ci.org/fizzvr/fizzvr.github.io)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/fizzvr/fizzvr.github.io.svg?style=social)](https://twitter.com/intent/tweet?text=@fizzvr Contácto.&url=%5Bobject%20Object%5D)
 
-Proyecto NodeJS y Ruby
-=========================
+<p align="center">
+  <a href="https://fizzvr.github.io/">
+    <img alt="fizzvr" src="https://github.com/fizzvr/fizzvr.github.io/blob/master/tile-wide.png?raw=true" width="500">
+  </a>
+</p>
 
-1. Clonar este repositorio, instalar dependencias y correr el servidor
+<p align="center">
+	Desarrollo Web NodeJS • Quito Ecuador
+</p>
 
-    ```bash
+<p align="center">
+  <a href="https://fizzvr.github.io"><img alt="Website" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg"></a>
+  <a href="https://travis-ci.org/fizzvr/fizzvr.github.io"><img alt="Build Status" src="https://travis-ci.org/fizzvr/fizzvr.github.io.svg?branch=master"></a>
+  <a href="http://gruntjs.com/"><img alt="Built with Grunt" src="https://cdn.gruntjs.com/builtwith.svg"></a>
+
+</p>
+
+
+---
+
+
+### Requisitos
+
+- [Ruby](https://www.ruby-lang.org/en/downloads/) con la gema [Bundler](http://bundler.io/) 
+	
+	```
+	ruby -v
+	# Verifica Ruby
+	gem install bundler
+	# Instala la gema bundler
+	```
+
+- [NodeJS](https://nodejs.org/es/) con el paquete [Bower](https://bower.io/)
+
+	```
+	node -v
+	# Verifica NodeJS
+	npm install -g bower
+	# Bower administra las dependencias del lado cliente
+	```
+
+### Desarrollo
+
+1.  Clonar este repositorio
+
+	```bash
 	git clone git@github.com:fizzvr/fizzvr.github.io.git 
 	cd fizzvr.github.io
+	```
+
+1.  Instalar dependencias de Ruby y NodeJS
+
+    ```bash
+	bundle install
 	npm install
+	```
+
+1. Correr el servidor local
+
+	```
 	npm start
 	```
 
 1. Hackeando en [http://localhost:3004/](http://localhost:3004/)
 
+### Licencia
+
+MIT

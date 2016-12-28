@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		'*\n' +
 		'* <%= leerJson.description %>\n' +
 		'*\n' +
-		'* Copyright (c) 2016 <%= leerJson.author %> \n' +
+		'* Copyright (c) 2017 <%= leerJson.author %> \n' +
 		'* Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)\n' + 
 		'* Contacto / Soporte: <%= leerJson.homepage %>\n' +                    
 		'*/\n\n',
@@ -74,13 +74,16 @@ module.exports = function(grunt) {
 					notify: true,
 					watchTask: true,
 					server: '_site/',
-					port: 3004
+					port: 3004,
+					ui: {
+    					port: 4000
+					}
 				}
 			}
 		},
 		exec: {
 			build: {
-				cmd: 'bundle exec jekyll build --watch'
+				cmd: 'bundle exec jekyll build -w -I'
 			},
 			server: {
 				cmd: 'bundle exec jekyll serve'

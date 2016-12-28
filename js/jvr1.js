@@ -13,7 +13,7 @@
             });
             Particles.init({
                 selector: '#particulas',
-                color: '#2CA0C7',
+                color: '#2a7ae2',
                 connectParticles: true
             });
             $('[data-toggle="tooltip"]').tooltip();

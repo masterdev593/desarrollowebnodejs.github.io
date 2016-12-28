@@ -1,22 +1,16 @@
 ---
 layout: plantilla
 title: Desarrollo Web NodeJS • Quito Ecuador
-description: desarrollo web nodejs en quito ecuador fizzvr
+description: Desarrollo Web NodeJS en Quito Ecuador fizzvr Desarrollo Diseño Fotografía Asistencia Aplicaciones basadasen nodos escalables y adaptables
 ---
-<a id="skippy" class="sr-only sr-only-focusable" href="#proyectos">
-	<div class="container">
-		<span class="skiplink-text">Ir al contenido principal.</span>
-	</div>
-</a>
 <section id="presentacion">
 	<div class="headerwrap">
 		<div class="container-fluid">
-			<h1 class="titulo-marca text-uppercase">Desarrollo Web</h1>
-			<p class="intro-text text-uppercase">Elaboramos Aplicaciones Web basadas en Nodos;</p>
-			<p class="intro-text text-uppercase">Tecnología altamente escalable: <span>MongoDB - Express - AngularJS - NodeJS </span></p>
+			<p class="intro-text text-uppercase">Desarrollo. diseño. fotografía. asistencia</p>
+			<h2 class="text-uppercase">elaboramos aplicaciones basadas en nodos; escalables y adaptables.</h2>
 			<ul class="nav nav-inline pad">
 				<li class="nav-item nodejs" data-toggle="tooltip" data-placement="left" data-title="NODEJS">NodeJS</li>
-				<li class="nav-item angularjs" data-toggle="tooltip" data-placement="bottom" data-title="ANGULARJS">angularjs</li>
+				<li class="nav-item angularjs" data-toggle="tooltip" data-placement="bottom" data-title="ANGULARJS">Angularjs</li>
 				<li class="nav-item mongodb" data-toggle="tooltip" data-placement="right" data-title="MONGODB">MongoDB</li>
 			</ul>
 			<div class="animated fadeOutDown infinite">
@@ -30,10 +24,14 @@ description: desarrollo web nodejs en quito ecuador fizzvr
 		<div class="container-fluid">
 			<ul class="nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-email.png" alt="Email"></a>
+					<a class="nav-link" href="#"><span class="fa fa-play"></span></a><div class="niple"></div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-whatsapp.png" alt="Whatsapp"></a>
+					<a class="nav-link" href="#"><img src="ivr/icono-email.png" alt="Email"></a>
+					<div class="niple"></div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><img src="ivr/icono-whatsapp.png" alt="Whatsapp"></a><div class="niple"></div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><img src="ivr/icono-github.png" alt="Github"></a>
@@ -48,7 +46,7 @@ description: desarrollo web nodejs en quito ecuador fizzvr
 					<a class="nav-link" href="#"><img src="ivr/icono-facebook.png" alt="Facebook"></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-rss.png" alt="Rss"></a>
+					<a class="nav-link" href="#"><img src="ivr/icono-rss.png" alt="Rss"></a><div class="niple"></div>
 				</li>
 			</ul>
 		</div>
@@ -69,7 +67,7 @@ description: desarrollo web nodejs en quito ecuador fizzvr
 	<div class="container">
 		<div class="row caja rounded primera">
 			<div class="col-xs text-justify">
-				<h1 class="text-xs-center">Nosotros</h1>
+				<h2 class="text-xs-center">Nosotros</h1>
 		        <p>igual ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quibusdam non expedita deserunt culpa unde illo eligendi, blanditiis, id officia at, dolor cum similique possimus ducimus saepe vitae perferendis dolorum.</p>
 			</div> 
 		</div>
@@ -83,7 +81,7 @@ description: desarrollo web nodejs en quito ecuador fizzvr
 				{% for post in site.posts %}
 				<div class="thumb-block">
 					<div class="thumb-inside">
-					<div class="thumb"><a href="{{ site.baseurl }}{{ post.url }}"><img class="video-pic" src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ post.hex }}-full.jpg"></a></div>
+					<div class="thumb"><a href="{{ site.baseurl }}{{ post.url }}"><img class="img-fluid img-thumbnail" src="{{site.baseurl}}/ivr/proyectos/gallery-img-{{ post.hex }}-full.jpg"></a></div>
 						<p><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
 						<!--   <p class="metadata"><span class="bg">{{ post.excerpt }}</span></p> -->
 						<p class="text-uppercase metadata"><span class="bg"><span class="duration">{{ post.date | date: "%b, %Y" }}</span>
