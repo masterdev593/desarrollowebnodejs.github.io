@@ -6,7 +6,7 @@
   "url": "https://github.com/fizzvr/fizzvr.github.io",
   "author": "Vladimir Rodríguez <fizzvr@gmail.com>",
   "scripts": {
-    "postinstall": "bower cache clean && bower install && distribuir_activos",
+    "postinstall": "bower install && grunt distribuir_activos",
     "test": "grunt distribuir_activos",
     "start": "grunt"
   },
@@ -28,6 +28,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-exec": "^1.0.0",
+    "bower": "^1.8.0",
     "moment": "^2.15.1"
   },
   "devDependencies": {

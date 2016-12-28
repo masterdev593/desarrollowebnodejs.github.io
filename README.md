@@ -1,4 +1,4 @@
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/fizzvr/fizzvr.github.io.svg?style=social)](https://twitter.com/intent/tweet?text=@fizzvr Contácto.&url=%5Bobject%20Object%5D)
+[![Twitter Follow](https://img.shields.io/twitter/follow/fizzvr.svg?style=social&label=Follow)](https://twitter.com/fizzvr)
 
 <p align="center">
   <a href="https://fizzvr.github.io/">
@@ -32,13 +32,15 @@
 	# Instala la gema bundler
 	```
 
-- [NodeJS](https://nodejs.org/es/) con el paquete [Bower](https://bower.io/)
+- [NodeJS](https://nodejs.org/es/) con el paquete [Bower](https://bower.io/) y [Grunt](http://gruntjs.com/)
 
 	```
 	node -v
 	# Verifica NodeJS
 	npm install -g bower
 	# Bower administra las dependencias del lado cliente
+	npm install -g grunt-cli
+	# Grunt corredor de tareas
 	```
 
 ### Desarrollo

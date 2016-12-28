@@ -3,8 +3,8 @@ language: ruby
 rvm: "2.2"
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
-script: "bundle exec jekyll build"
+  - export PATH="$HOME/.yarn/bin:$PATH"
+script: "yarn && bundle exec jekyll build"
 notifications:
   email:
     recipients:
