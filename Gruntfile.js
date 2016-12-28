@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		leerJson: grunt.file.readJSON('package.json'),
 		estandarte: '/*\n' +
-		'* <%= leerJson.name %> Version: <%= leerJson.version %>\n' +
+		'* <%= leerJson.name %> version: <%= leerJson.version %>\n' +
 		'*\n' +
 		'* <%= leerJson.description %>\n' +
 		'*\n' +
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 			    files: 'js/*',
-			    tasks: 'uglify',
+			    tasks: ['uglify', 'desarrollo'],
 		  },
 		},
 		uglify: {
