@@ -1,8 +1,6 @@
 sudo: required
-language: 
-  - ruby
-  - node_js
-rvm: "2.2"
+language: ruby
+rvm: "2.3"
 nodejs: "6"
 before_install:
   - sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
@@ -12,7 +10,8 @@ before_install:
 cache:
   directories:
   - $HOME/.yarn-cache
-script: "yarn && bundle exec jekyll build"
+install: "yarn"
+script: "bundle exec jekyll build"
 notifications:
   email:
     recipients:
