@@ -8,9 +8,6 @@ $color_de_fondo2:	green;
 $color_de_fondo3:	blue;
 $fondo_imagen:	url('../ivr/lander3.jpg');
 $fondo_imagenP:	url('../ivr/lander2.jpg');
-
-
-
 $tamano-de-letra-base:   14px;
 $ancho-de-letra-base: 400;
 $alto-linea-base: 1.5;
@@ -23,15 +20,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
-
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

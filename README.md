@@ -58,6 +58,8 @@
 	bundle install
 	npm install
 	```
++Nota: Si tienes [Yarn](https://yarnpkg.com/), puedes correr con el comando `yarn`, este proyecto incluye el archivo yarn.lock para asegurar las dependencias.
+
 
 1. Correr el servidor local
 

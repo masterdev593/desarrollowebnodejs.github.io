@@ -1,6 +1,6 @@
 #presentacion {
   p, h1 {
-    color: #f8f8f8;
+    color: #fff;
     text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
   }
 }
@@ -30,10 +30,10 @@
 .headerwrap {
 //	background: $fondo_imagen center center fixed;
     background: $fondo_imagen no-repeat bottom center fixed;
-	margin-top: -50px;
-	padding-top: 170px;
-	text-align:center;
-	min-height: 750px;
+	//margin-top: -50px;
+	padding-top: 7rem;
+	text-align: center;
+	//min-height: 750px;
 	position: relative;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -44,8 +44,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: .8;
-    margin: 1.5px;
+    //opacity: .8;
+    //margin: 0;
+    height: 480px;
 }
 .pos-f-t {
     top: 4rem;
@@ -85,14 +86,6 @@
     {
         background-position: -128px 0;
     }
-//.headerwrap h1 {
-//    margin: 0 0 35px;
-//    font-family: $familia_intro;
-//    letter-spacing: 5px;
-//    font-weight: 700;
-//}
-
-
 
 .barra {
     position: fixed;

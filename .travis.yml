@@ -1,5 +1,5 @@
 sudo: required
-language: ruby
+language: node_js
 rvm: "2.3"
 nodejs: "6"
 before_install:
