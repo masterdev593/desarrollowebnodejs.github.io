@@ -1,6 +1,7 @@
 #presentacion {
-  p, h2 {
+  p, h1 {
     color: #f8f8f8;
+    text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
   }
 }
 .nipple {
@@ -17,11 +18,11 @@
 .intro-text {
   font-family: $familia_intro_text;
     //color: #f8f8f8;
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
+   // color: rgba(255, 255, 255, 0.9);
+    //text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
 
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
 }
 .pad {
     padding: 25px 0;
@@ -30,7 +31,7 @@
 //	background: $fondo_imagen center center fixed;
     background: $fondo_imagen no-repeat bottom center fixed;
 	margin-top: -50px;
-	padding-top: 125px;
+	padding-top: 170px;
 	text-align:center;
 	min-height: 750px;
 	position: relative;

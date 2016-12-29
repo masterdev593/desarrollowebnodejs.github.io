@@ -5,6 +5,8 @@
 // body {
 //   margin-bottom: 60px;
 // }
+
+
 .fa {
   color: #f8f8f8;
 }
@@ -39,10 +41,8 @@
 @include media-breakpoint-up(lg) {
   body {
     font-size: 28px;
-    background-color: $color_de_fondo;
-    background-image: -webkit-linear-gradient(30deg, $color_de_fondo, #159957);
-    background-image: -o-linear-gradient(30deg, $color_de_fondo, #159957);
-    background-image: linear-gradient(120deg, $color_de_fondo, #159957);
+    background-color: #010103;
+    background-image: url("../ivr/dark_Tire.png");
   }
   .intro-text {
     font-size: 18px;
