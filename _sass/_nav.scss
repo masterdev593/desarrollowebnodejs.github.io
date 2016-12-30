@@ -1,10 +1,11 @@
 .navbar-fixed-right {
-    font-family: $familia_de_letra_nav;
+    //font-family: $familia_de_letra_nav;
     position: fixed;
-    top: 20px;
-    right: 0;
-    width: 125px;
+    //top: 20px;
+    //right: 0;
+    //width: 125px;
     z-index: 1030;
+    left: 0;
 }
 .navbar-nav .nav-item+.nav-item {
     margin-left: 0;
@@ -17,6 +18,7 @@
     display: flex;
     width: 32px;
     height: 35px;
+    margin-right: 5px;
 }
 .navbar-custom a {
     color: #f8f8f8;

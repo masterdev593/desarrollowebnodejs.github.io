@@ -4,6 +4,25 @@
     text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
   }
 }
+.main-carousel {
+  height: calc(100vh - 64px);
+}
+.principal {
+  height: calc(100vh - 44px);
+  text-align: center;
+  position: relative;
+  padding-top: 7rem;
+  background: $fondo_imagen center center fixed;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: scroll;
+}
 .nipple {
   position: absolute;
   width: 0;
@@ -45,8 +64,9 @@
     -o-background-size: cover;
     background-size: cover;
     //opacity: .8;
-    //margin: 0;
-    height: 480px;
+    //margin-top: 64px;
+    min-height: 480px;
+    z-index: -2;
 }
 .pos-f-t {
     top: 4rem;
@@ -65,7 +85,7 @@
     background: transparent;
     //opacity: 1;
 }
-.headerwrap li
+.principal li
 {
     background-image: url('../ivr/vr-skills.png');
     background-repeat: no-repeat;
@@ -74,15 +94,15 @@
     //display:inline-block;
     text-indent:-9999px;
 }
-    .headerwrap li.nodejs
+    .principal li.nodejs
     {
         background-position: 0 0;
     }
-    .headerwrap li.angularjs
+    .principal li.angularjs
     {
         background-position: -64px 0;
     }
-    .headerwrap li.mongodb
+    .principal li.mongodb
     {
         background-position: -128px 0;
     }

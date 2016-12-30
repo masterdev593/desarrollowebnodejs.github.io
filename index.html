@@ -3,8 +3,8 @@ layout: plantilla
 title: Desarrollo Web NodeJS • Quito Ecuador
 description: Desarrollo Web NodeJS en Quito Ecuador fizzvr Desarrollo Diseño Fotografía Asistencia móvil y web
 ---
-<section id="presentacion">
-	<div class="headerwrap">
+<div class="principal">
+	<section id="presentacion">
 		<div class="container-fluid">
 			<p class="intro-text text-uppercase">Desarrollo. diseño. fotografía. asistencia</p>
 			<h1 class="text-uppercase">móvil y web</h1>
@@ -15,66 +15,22 @@ description: Desarrollo Web NodeJS en Quito Ecuador fizzvr Desarrollo Diseño Fo
 			</ul>
 			<div class="animated fadeOutDown infinite">
 				<a href="#servicios" class="btn btn-circle">
-				<i class="fa fa-3x fa-angle-double-down"></i>
+					<i class="fa fa-3x fa-angle-double-down"></i>
 				</a>
 			</div>
-		</div>  
-	</div>
-	<div class="pos-f-t social hidden-xs-down">
-		<div class="container-fluid">
-			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#"><span class="fa fa-play"></span></a><div class="niple"></div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-email.png" alt="Email"></a>
-					<div class="niple"></div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-whatsapp.png" alt="Whatsapp"></a><div class="niple"></div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-github.png" alt="Github"></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-googleplus.png" alt="Google Plus"></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-twitter.png" alt="Twitter"></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-facebook.png" alt="Facebook"></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><img src="ivr/icono-rss.png" alt="Rss"></a><div class="niple"></div>
-				</li>
-			</ul>
 		</div>
-	</div>
-	<div class="barra">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs">
-					<a href="" class="float-xs-right btn btn-outline-primary"><i class="fa fa-play"></i></a>
-				</div>
+	</section>
+	<section id="servicios">
+		<div class="container">
+			<div class="row caja rounded primera">
+				<div class="col-xs text-justify">
+					<h1 class="text-xs-center">Nosotros</h1>
+					<p>igual ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quibusdam non expedita deserunt culpa unde illo eligendi, blanditiis, id officia at, dolor cum similique possimus ducimus saepe vitae perferendis dolorum.</p>
+				</div> 
 			</div>
 		</div>
-	</div>
-
-</section>
-
-<section id="servicios">
-	<div class="container">
-		<div class="row caja rounded primera">
-			<div class="col-xs text-justify">
-				<h2 class="text-xs-center">Nosotros</h1>
-		        <p>igual ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quibusdam non expedita deserunt culpa unde illo eligendi, blanditiis, id officia at, dolor cum similique possimus ducimus saepe vitae perferendis dolorum.</p>
-			</div> 
-		</div>
-	</div>
-</section>
-
-<section id="proyectos">
+	</section>
+	<section id="proyectos">
 	<div class="container">
 		<div class="row caja rounded">
 			<div class="mozaique thumbs-5">
@@ -93,82 +49,10 @@ description: Desarrollo Web NodeJS en Quito Ecuador fizzvr Desarrollo Diseño Fo
 			</div>
 		</div>
 	</section>
-
-<section id="blog">
-	<div class="container">
-		<div class="row caja rounded">
-			<div class="col-xs">
-				{% for post in paginator.posts %}
-				<article class="post-preview">
-					<a href="{{ post.url | prepend: site.baseurl }}">
-						<h2 class="post-title">{{ post.title }}</h2>
-
-						{% if post.subtitle %}
-						<h3 class="post-subtitle">
-							{{ post.subtitle }}
-						</h3>
-						{% endif %}  
-					</a>
-
-					<p class="post-meta">
-						Posted on {{ post.date | date: "%B %-d, %Y" }}
-					</p>
-
-					<div class="post-entry">
-						{{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-						<a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-					</div>
-
-				</article>
-				{% endfor %}
-				{% if paginator.total_pages > 1 %}
-				<ul class="pager main-pager">
-					{% if paginator.previous_page %}
-					<li class="previous">
-						<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; +++++++</a>
-					</li>
-					{% endif %}
-					{% if paginator.next_page %}
-					<li class="next">
-						<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">+++++++ &rarr;</a>
-					</li>
-					{% endif %}
-				</ul>
-				{% endif %}
-			</div>
-		</div>
+</div>
+<footer>
+	<div class="pie text-xs-center text-uppercase">
+		<p class="">Derechos de copia &copy; 2017 <a target="_blank" href="https://github.com/fizzvr" title="{{ site.description }}">{{ site.title }}</a></p>
 	</div>
-</section>
+</footer>
 
-<section id="info">
-	<div class="container">
-		<div class="row caja rounded">
-			<div class="col-xs">
-				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt iusto a quasi rem repellat facilis, aperiam. Quidem quaerat magnam dolorem, accusantium repudiandae expedita quia, consequatur nemo pariatur architecto consectetur non.</span>
-					<span>Asperiores, excepturi obcaecati vel quam hic voluptatem maiores id rem. Minus iure vel necessitatibus quasi quae reiciendis aperiam illo. Ipsam cum quaerat voluptate, ullam iusto similique veritatis, velit dolore temporibus.</span>
-					<span>Suscipit dicta praesentium molestiae consequatur sit vero, iusto quisquam inventore animi. Quae labore temporibus veritatis excepturi, dolores sequi velit. Ipsam minima expedita nostrum quisquam minus repellendus reprehenderit quod, eum eos.</span>
-					<span>Quibusdam esse rerum dolorem vero, quos consectetur asperiores eos totam nobis nostrum laboriosam, dignissimos placeat praesentium tempora laborum. Debitis hic, id dolores ducimus pariatur facilis adipisci unde minima ipsa molestiae.</span>
-					<span>Cumque totam accusamus molestiae a neque. Eos similique rerum accusamus totam recusandae porro, libero quaerat fugit officia consectetur at consequuntur, vitae nihil qui sapiente, optio consequatur cum culpa minus id.</span>
-					<span>Magnam dolorem quisquam, laboriosam, consectetur fugit alias unde repellendus est illum labore atque, et necessitatibus. Rerum temporibus, dolor perspiciatis est eaque nisi id dolorum quibusdam cumque iure a, minus earum!</span>
-					<span>Ullam unde tempora consequatur, earum id reiciendis magnam soluta praesentium delectus sunt assumenda qui quidem veritatis hic dolorem eligendi. Vel similique esse inventore, culpa sed, saepe fuga dolore repudiandae ipsa.</span></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg text-xs-center">
-					<p>Copyright &copy; Company 2013</p>
-				</div>
-				<div class="col-sm-6">
-					&copy; 2013 <a target="_blank" href="#" title="{{ site.description }}">{{ site.title }}</a>. Todos los derechos reservados.
-				</div>
-				<div class="col-sm-6">
-					<img class="pull-right" src="ivr/ec2.png" alt="ShapeBootstrap" title="ShapeBootstrap">
-				</div>
-			</div>
-		</div>
-	</footer>

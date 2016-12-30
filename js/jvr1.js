@@ -6,7 +6,9 @@
                 $('.close:visible').click();
             });
             $(window).scroll(function() {
-                 if ($(".close").offset().top > 40) {
+                var offset_t = $(".close").offset().top - $(window).scrollTop();
+                console.log(offset_t);
+                 if ($(".close").offset().top > 5) {
                     $("#navbar-collapse").removeClass("in");
                     $(".close").blur();
                 } 
