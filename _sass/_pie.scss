@@ -2,8 +2,13 @@
 	font-family: $familia_de_letra_nav;
 	font-size: $small-font-size;
 	//background-color: rgba(6, 6, 6, 0.9);
-	height: 100%;
-	padding-top: 10px;
-	color: $grey-color-light;
+	//height: 100%;
+	//padding-top: 10px;
+	font-weight: 600;
+	color: #000;
+	p {
+		margin-bottom: 0;
+	}
+
 
 }

@@ -1,49 +1,72 @@
 html, body {
   height: 100vh;
 }
-
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(xs) {
   body {
     font-size: 16px;
     //background: $color_de_fondo3;
-    background: $color_de_fondo3;
-    background-image: -webkit-linear-gradient(90deg, $color_de_fondo3, #fff);
-    background-image: -o-linear-gradient(90deg, $color_de_fondo3, #fff);
-    background-image: linear-gradient(90deg, $color_de_fondo3, #fff);
+    background: $color_de_fondo4;
+    background-image: -webkit-linear-gradient(45deg, $color_de_fondo4, #f8f8f8);
+    background-image: -o-linear-gradient(45deg, $color_de_fondo4, #f8f8f8);
+    background-image: linear-gradient(45deg, $color_de_fondo4, #f8f8f8);
 
   }
   .intro-text {
     font-size: 12px;
   }
+  #presentacion {
+    padding-top: 2rem;
+  }
 }
+@include media-breakpoint-up(sm) {
+  body {
+    font-size: 16px;
+    //background: $color_de_fondo3;
+    background: $color_de_fondo3;
+    background-image: -webkit-linear-gradient(45deg, $color_de_fondo3, #f8f8f8);
+    background-image: -o-linear-gradient(45deg, $color_de_fondo3, #f8f8f8);
+    background-image: linear-gradient(45deg, $color_de_fondo3, #f8f8f8);
 
+  }
+  //.intro-text {
+  //  font-size: 12px;
+  //}
+  #presentacion {
+    padding-top: 4rem;
+  }
+}
 @include media-breakpoint-up(md) {
   body {
     font-size: 20px;
     //background: red;
     background: $color_de_fondo2;
-    background-image: -webkit-linear-gradient(90deg, $color_de_fondo2, #fff);
-    background-image: -o-linear-gradient(90deg, $color_de_fondo2, #fff);
-    background-image: linear-gradient(90deg, $color_de_fondo2, #fff);
+    background-image: -webkit-linear-gradient(45deg, $color_de_fondo2, #f8f8f8);
+    background-image: -o-linear-gradient(45deg, $color_de_fondo2, #f8f8f8);
+    background-image: linear-gradient(45deg, $color_de_fondo2, #f8f8f8);
   }
   .intro-text {
     font-size: 16px;
   }
+  #presentacion {
+    padding-top: 6rem;
+  }
 }
-
 @include media-breakpoint-up(lg) {
   body {
     font-size: 28px;
-    //background: #f8f8f8;
+    background: #f8f8f8;
     //background: url("../ivr/dark_Tire.png") fixed;
-    background: rgba(6, 6, 6, 0.9);
-    background-image: -webkit-linear-gradient(90deg, #000, #fff);
-    background-image: -o-linear-gradient(90deg, #000, #fff);
-    background-image: linear-gradient(90deg, #000, #fff);
+    //background: rgba(6, 6, 6, 0.9);
+    background-image: -webkit-linear-gradient(45deg, #000, #f8f8f8);
+    background-image: -o-linear-gradient(45deg, #000, #f8f8f8);
+    background-image: linear-gradient(45deg, #000, #f8f8f8);
     //margin: 64px 0;
   }
   .intro-text {
     font-size: 18px;
+  }
+  #presentacion {
+    padding-top: 6.5rem;
   }
 }
 body {
@@ -72,6 +95,22 @@ h6 {
 #particulas {
     position: fixed;
     z-index: -1;
+}
+.principal {
+  height: calc(100vh - 20px);
+  text-align: center;
+  position: relative;
+  //padding-top: 7rem;
+  background: $fondo_imagen center center fixed;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: scroll;
 }
 .caja {
   background-color: rgba(6, 6, 6, 0.9);
