@@ -1,6 +1,6 @@
 ---
 css:
-  - "/css/bootstrap.min.css"
+  - "/act/css/bootstrap-flex.min.css"
   - "/css/fa/css/font-awesome.min.css"
   - "/act/css/animate.min.css"
   - "/css/vr1.css"
@@ -20,8 +20,12 @@ js:
   {% include head.html %}
     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
         <!--[if lt IE 8]>
-            <p class="browserupgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">descarga </a> uno mas moderno esto mejora tu experiencia en este sitio.</p>
+            <p class="browserupgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">descarga </a> uno más moderno esto mejora tu experiencia en este sitio.</p>
         <![endif]-->
+        <a id="skippy" class="sr-only sr-only-focusable" href="#proyectos">
+        <div class="container">
+          <span class="skiplink-text">Saltar al contenido principal.</span>
+        </div>
         <canvas class="hidden-xs-down" id="particulas"></canvas> 
         {% include navbar.html %}
         {{ content }}

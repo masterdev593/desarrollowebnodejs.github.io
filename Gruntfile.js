@@ -45,7 +45,8 @@ module.exports = function(grunt) {
 				{
 					expand: true,
 					flatten: true,
-					src: ["bower_components/animate.css/animate.min.css"],
+					src: ["bower_components/animate.css/animate.min.css",
+						"bower_components/bootstrap/dist/css/bootstrap-flex.min.css"],
 					dest: "act/css/" 
 				},
 				{

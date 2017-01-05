@@ -1,5 +1,3 @@
-[![Twitter Follow](https://img.shields.io/twitter/follow/fizzvr.svg?style=social&label=Follow)](https://twitter.com/fizzvr)
-
 <p align="center">
   <a href="https://fizzvr.github.io/">
     <img alt="fizzvr" src="https://github.com/fizzvr/fizzvr.github.io/blob/master/tile-wide.png?raw=true" width="500">
@@ -23,7 +21,7 @@
 
 ### Requisitos
 
-- [Ruby](https://www.ruby-lang.org/en/downloads/) con la gema [Bundler](http://bundler.io/) 
+- [Ruby](https://www.ruby-lang.org/es/downloads/) con la gema [Bundler](http://bundler.io/) 
 	
 	```
 	ruby -v

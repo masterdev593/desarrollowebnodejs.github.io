@@ -11,6 +11,7 @@ cache:
   directories:
   - $HOME/.yarn-cache
 install: "yarn"
+script: "npm test"
 notifications:
   email:
     recipients:
