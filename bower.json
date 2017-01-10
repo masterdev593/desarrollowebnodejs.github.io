@@ -16,8 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.5",
-    "particles.js": "https://github.com/fizzvr/particles.js.git#^1.0.2",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "tether": "^1.4.0",
+    "particles.js": "https://github.com/fizzvr/particles.js.git#^1.0.2"
   }
 }

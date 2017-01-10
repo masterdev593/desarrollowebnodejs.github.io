@@ -1,19 +1,17 @@
 ---
 css:
-  - "/act/css/bootstrap-flex.min.css"
-  - "/css/fa/css/font-awesome.min.css"
+  - "/css/bootstrap.min.css"
+  - "/act/css/font-awesome.min.css"
   - "/act/css/animate.min.css"
-  - "/css/vr1.css"
+  - "css/vr1.css"
 googlefonts:
-  - "Lora:400,700,400italic,700italic"
-  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-  - "Bungee|Oswald:300"
+  - "Arima+Madurai|Indie+Flower"
 js:
   - "/act/js/jquery.min.js"
   - "/act/js/tether.min.js"
-  - "/act/js/bootstrap.min.js"
+  - "/js/bootstrap.min.js"
   - "/act/js/particles.min.js"
-  - "/act/js/vr1.min.js"
+  - "/js/jvr1.js"
 ---
 <!doctype html>
 <html lang="es" itemscope itemtype="http://schema.org/LocalBusiness">
@@ -22,14 +20,10 @@ js:
         <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">descarga </a> uno más moderno esto mejora tu experiencia en este sitio.</p>
         <![endif]-->
-        <a id="skippy" class="sr-only sr-only-focusable" href="#proyectos">
-        <div class="container">
-          <span class="skiplink-text">Saltar al contenido principal.</span>
-        </div>
         <canvas class="hidden-xs-down" id="particulas"></canvas> 
         {% include navbar.html %}
         {{ content }}
-        <!-- {% include footer.html %} -->
+        {% include footer.html %}
         {% include scripts.html %}
     </body>
 </html>

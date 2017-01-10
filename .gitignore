@@ -8,3 +8,4 @@ node_modules
 .bundle
 vendor/cache
 vendor/bundle
+act

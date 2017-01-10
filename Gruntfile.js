@@ -43,17 +43,23 @@ module.exports = function(grunt) {
 			activos: {
 				files: [
 				{
+					expand: true, 
+					flatten: true,
+					src: ['bower_components/font-awesome/fonts/*'], 
+					dest: 'act/fonts', 
+					filter: 'isFile'
+				},
+				{
 					expand: true,
 					flatten: true,
-					src: ["bower_components/animate.css/animate.min.css",
-						"bower_components/bootstrap/dist/css/bootstrap-flex.min.css"],
+					src: ["bower_components/font-awesome/css/font-awesome.min.css",
+					"bower_components/animate.css/animate.min.css"],
 					dest: "act/css/" 
 				},
 				{
 					expand: true,
 					flatten: true,
-					src: ["bower_components/bootstrap/dist/js/bootstrap.min.js",
-					"bower_components/jquery/dist/jquery.min.js",
+					src: ["bower_components/jquery/dist/jquery.min.js",
 					"bower_components/jquery/dist/jquery.min.map",
 					"bower_components/tether/dist/js/tether.min.js",
 					"bower_components/particles.js/dist/particles.min.js"],
@@ -72,7 +78,7 @@ module.exports = function(grunt) {
 				options: {
                     online: false,
                     background: true,
-					notify: true,
+					notify: false,
 					watchTask: true,
 					server: '_site/',
 					port: 3004,
