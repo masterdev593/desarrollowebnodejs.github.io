@@ -1,14 +1,27 @@
 .pie {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	right: 0;
+	left: 0;
+	bottom: 0;
 	font-family: $familia_intro_text;
-	font-size: $small-font-size;
-	//background-color: rgba(6, 6, 6, 0.9);
-	//height: 100%;
-	//padding-top: 10px;
-	font-weight: 600;
-	color: #000;
+	font-size: 10px;
+	font-weight: lighter;
+	color: #fff;
 	p {
 		margin-bottom: 0;
 	}
-
+	a {
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+     transition: all .2s ease-in-out;
+	}
+	a:hover,
+	a:focus {
+	    text-decoration: none;
+	    color: #f8f8f8;
+	}
 
 }

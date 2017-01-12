@@ -1,5 +1,9 @@
-html, body {
-  height: 100vh;
+html {
+  //height: 100vh;
+  //min-height:100%;
+  //border-top:10px solid #ECEEF1;
+  //border-bottom:10px solid #ECEEF1;
+
 }
 @include media-breakpoint-up(xs) {
   body {
@@ -72,11 +76,6 @@ html, body {
 body {
     font-family:  $familia_de_letra_base;
     color: $color_de_texto;
-  //  background: $color_de_fondo;
-//    font-size: 1rem;
-//  line-height: 1.5;
-//  color: #373a3c;
-//  background-color: #fff;
 }
 h1,
 h2,
@@ -96,11 +95,13 @@ h6 {
     position: fixed;
     z-index: -1;
 }
+.bg-inverse {
+  background-color: rgba(6, 6, 6, 0.9);
+}
 .principal {
-  height: calc(100vh - 20px);
+  //height: calc(100vh - 20px);
   text-align: center;
   position: relative;
-  //padding-top: 7rem;
   background: $fondo_imagen center center fixed;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -110,7 +111,8 @@ h6 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow-y: scroll;
+  padding-bottom: 0.01px;
+  //overflow-y: scroll;
 }
 .caja {
   background-color: rgba(6, 6, 6, 0.9);
