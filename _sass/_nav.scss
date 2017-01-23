@@ -1,35 +1,74 @@
-.navbar-fixed-right {
-    position: fixed;
-    //top: 20px;
-    //right: 0;
-    //width: 125px;
-    z-index: 1030;
-    left: 0;
-}
-.navbar-nav .nav-item+.nav-item {
-    margin-left: 0;
-}
-.close:focus {
-    outline: 0;
-}
-.mini-ec {
-    background: url("../ivr/ec2.png") no-repeat;
-    display: flex;
-    width: 32px;
-    height: 35px;
-    margin-right: 5px;
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: $familia_intro_text;
+    font-size: 12px;
+    font-style: bold;
+    background-color: rgba(6, 6, 6, 0.9);
 }
 .navbar-custom a {
     color: #f8f8f8;
 }
-.navbar-custom .nav li a {
+.navbar-custom .navbar-nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li.active {
     outline: 0;
     background-color: rgba(255,255,255,.2);
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+/* .colapsar-menu {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+} */
+
+@include media-breakpoint-up(md) {
+    .navbar {
+        padding: 12px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+.mini-ec {
+    background: url("../ivr/ec2.png") no-repeat;
+    display: flex;
+    width: 34px;
+    height: 34px;
 }

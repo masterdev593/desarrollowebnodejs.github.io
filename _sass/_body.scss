@@ -1,9 +1,6 @@
 html {
-  //height: 100vh;
-  //min-height:100%;
-  //border-top:10px solid #ECEEF1;
-  //border-bottom:10px solid #ECEEF1;
-
+    width: 100%;
+    height: 100%;
 }
 @include media-breakpoint-up(xs) {
   body {
@@ -19,7 +16,7 @@ html {
     font-size: 12px;
   }
   #presentacion {
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
 }
 @include media-breakpoint-up(sm) {
@@ -54,6 +51,9 @@ html {
   #presentacion {
     padding-top: 6rem;
   }
+  #nosotros {
+    padding-top: 5rem;
+  }
 }
 @include media-breakpoint-up(lg) {
   body {
@@ -76,6 +76,8 @@ html {
 body {
     font-family:  $familia_de_letra_base;
     color: $color_de_texto;
+    width: 100%;
+    height: 100%;
 }
 h1,
 h2,
@@ -91,13 +93,7 @@ h6 {
 .fa {
   color: #f8f8f8;
 }
-#particulas {
-    position: fixed;
-    z-index: -1;
-}
-.bg-inverse {
-  background-color: rgba(6, 6, 6, 0.9);
-}
+
 .principal {
   //height: calc(100vh - 20px);
   text-align: center;

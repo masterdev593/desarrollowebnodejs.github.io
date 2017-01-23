@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 					src: ["bower_components/jquery/dist/jquery.min.js",
 					"bower_components/jquery/dist/jquery.min.map",
 					"bower_components/tether/dist/js/tether.min.js",
-					"bower_components/particles.js/dist/particles.min.js"],
+					"bower_components/jquery.easing/jquery.easing.min.js"],
 					dest: "act/js/" 
 				}
 			]

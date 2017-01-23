@@ -20,6 +20,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
     "tether": "^1.4.0",
-    "particles.js": "https://github.com/fizzvr/particles.js.git#^1.0.2"
+    "jquery.easing": "jquery-easing-original#^1.4.1"
   }
 }
