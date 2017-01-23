@@ -2,26 +2,13 @@
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	right: 0;
-	left: 0;
 	bottom: 0;
 	font-family: $familia_intro_text;
 	font-size: 10px;
 	font-weight: lighter;
-	color: #fff;
+	color: #ccc;
 	p {
 		margin-bottom: 0;
+		padding-bottom: 2px;
 	}
-	a {
-    color: #fff;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-     transition: all .2s ease-in-out;
-	}
-	a:hover,
-	a:focus {
-	    text-decoration: none;
-	    color: #f8f8f8;
-	}
-
 }
