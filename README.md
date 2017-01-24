@@ -47,7 +47,7 @@
 
 	```bash
 	git clone https://github.com/DesarrolloWebNodeJS/desarrollowebnodejs.github.io.git
-	cd fizzvr.github.io
+	cd desarrollowebnodejs.github.io
 	```
 
 1.  Instalar dependencias de Ruby y NodeJS
