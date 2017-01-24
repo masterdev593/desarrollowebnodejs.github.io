@@ -46,7 +46,7 @@
 1.  Clonar este repositorio
 
 	```bash
-	git clone git@github.com:fizzvr/fizzvr.github.io.git 
+	git clone https://github.com/DesarrolloWebNodeJS/desarrollowebnodejs.github.io.git
 	cd fizzvr.github.io
 	```
 

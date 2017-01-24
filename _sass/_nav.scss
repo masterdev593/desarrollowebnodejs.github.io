@@ -4,8 +4,9 @@
     text-transform: uppercase;
     font-family: $familia_intro_text;
     font-size: 12px;
-    font-style: bold;
+    font-weight: bold;
     background-color: rgba(6, 6, 6, 0.9);
+    letter-spacing: 5px;
 }
 .navbar-custom a {
     color: #f8f8f8;
@@ -34,7 +35,7 @@
     .navbar {
         padding: 12px 0;
         border-bottom: 0;
-        letter-spacing: 1px;
+        letter-spacing: 5px;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -42,7 +43,7 @@
     }
     .top-nav-collapse {
         padding: 0;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(6, 6, 6, 0.9);
     }
 
     .navbar-custom.top-nav-collapse {
@@ -50,14 +51,7 @@
     }
 
 }
-.navbar-nav {
-    width: 100%;
-    text-align: center;
-}
-.navbar-nav > li {
-    float: none;
-    display: inline-block;
-}
+
 
 
 

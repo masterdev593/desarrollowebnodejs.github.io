@@ -1,4 +1,5 @@
 #presentacion {
+  padding-top: 8rem;
   p, h1 {
     color: #fff;
     text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
@@ -26,24 +27,21 @@
 .pad {
     padding: 25px 0;
 }
-.pos-f-t {
-    top: 4rem;
-    z-index: 0;
-    max-width: 0;
-}
+
 .social a {
      
-    background: #393939;
-    padding:15px 5px;
-    margin: 1px;
-    opacity: .5;
+    
+    //padding:15px 5px;
+    margin: 1px 0;
+   
     border-radius: .25rem;
+    background: transparent;
 }
 .social a:hover {
-    background: transparent;
-    //opacity: 1;
+    background: #393939;
+    opacity: 1;
 }
-.principal li
+#skills li
 {
     background-image: url('../ivr/vr-skills.png');
     background-repeat: no-repeat;
@@ -52,15 +50,15 @@
     //display:inline-block;
     text-indent:-9999px;
 }
-    .principal li.nodejs
+    #skills  li.nodejs
     {
         background-position: 0 0;
     }
-    .principal li.angularjs
+    #skills  li.angularjs
     {
         background-position: -64px 0;
     }
-    .principal li.mongodb
+    #skills li.mongodb
     {
         background-position: -128px 0;
     }
