@@ -1,9 +1,9 @@
 {
-  "name": "fizzvr",
+  "name": "desarrollowebnodejs",
   "version": "1.0.1",
-  "description": "Desarrollo Web NodeJS • Quito Ecuador",
-  "homepage": "https://fizzvr.github.io",
-  "url": "https://github.com/fizzvr/fizzvr.github.io",
+  "description": "Desarrollo Web NodeJS en Quito Ecuador Desarrollo Diseño Fotografía Asistencia Expertos Móvil y Web",
+  "homepage": "https://desarrollowebnodejs.github.io",
+  "url": "https://github.com/DesarrolloWebNodeJS/desarrollowebnodejs.github.io",
   "author": "Vladimir Rodríguez <fizzvr@gmail.com>",
   "scripts": {
     "postinstall": "bower install && grunt distribuir_activos",
@@ -13,14 +13,14 @@
   "license": "MIT",
   "engines": {
     "git": "2.11",
-    "node": "7.2",
-    "npm": "3.10",
+    "node": "7.4",
+    "npm": "4.0",
     "ruby": "2.3"
   },
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fizzvr/fizzvr.github.io.git"
+    "url": "git@github.com:DesarrolloWebNodeJS/desarrollowebnodejs.github.io.git"
   },
   "dependencies": {
     "grunt": "~1.0.1",
@@ -28,8 +28,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-exec": "^1.0.0",
-    "bower": "^1.8.0",
-    "moment": "^2.15.1"
+    "bower": "^1.8.0"
   },
   "devDependencies": {
     "grunt-contrib-watch": "^1.0.0",

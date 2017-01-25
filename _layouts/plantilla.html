@@ -11,6 +11,8 @@ js:
   - "/act/js/tether.min.js"
   - "/js/bootstrap.min.js"
   - "/act/js/jquery.easing.min.js"
+  - "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"
+  - "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/es.js"
   - "/js/jvr1.js"
 ---
 <!doctype html>
@@ -20,9 +22,7 @@ js:
       <!--[if lt IE 8]>
         <p class="browserupgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">descarga </a> uno más moderno esto mejora tu experiencia en este sitio.</p>
       <![endif]-->
-      
-      
-  <a href="#proyectos" class="sr-only sr-only-focusable">Contenido Principal..</a>
+      <a href="#proyectos" class="sr-only sr-only-focusable">Contenido Principal..</a>
       {% include navbar.html %}
       {{ content }}
       {% include footer.html %}

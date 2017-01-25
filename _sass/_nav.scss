@@ -13,6 +13,7 @@
 }
 .navbar-custom a {
     color: #f8f8f8;
+    border-radius: .25rem;
 }
 .navbar-custom .navbar-nav li a {
     -webkit-transition: background .3s ease-in-out;
@@ -23,7 +24,9 @@
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li.active {
     outline: 0;
+    border-radius: .25rem;
     background-color: rgba(255,255,255,.2);
+    opacity: 1;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active {
@@ -40,9 +43,11 @@
         border-bottom: 0;
         letter-spacing: 5px;
         background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        //-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+       // -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        //transition: background .5s ease-in-out,padding .5s ease-in-out;
+
+        
     }
     .top-nav-collapse {
         padding: 0;
@@ -50,22 +55,18 @@
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        -webkit-transition: box-shadow .218s;
+        transition: box-shadow .218s;
+         -webkit-box-shadow: 0 4px 12px rgba(255,255,255,.2); 
+        box-shadow: 0 4px 12px rgba(255,255,255,.2);
+
+        border-bottom: 1px solid rgba(255,255,255,.4);
     }
 
 }
-
-
-
-
-
-
-
-
-
 .mini-ec {
     background: url("../ivr/ec2.png") no-repeat;
     display: flex;
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
 }

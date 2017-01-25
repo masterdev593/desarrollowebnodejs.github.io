@@ -1,11 +1,11 @@
 /*
-* fizzvr Gruntfile
+* desarrollowebnodejs Gruntfile
 *
 * Desarrollo Web NodeJS • Quito Ecuador
 *
-* Copyright (c) 2017 Vladimir Rodríguez <fizzvr@gmail.com>
-* Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)
-* Para contacto y soporte: https://fizzvr.github.io
+* Copyright (c) 2017 Desarrollo Web NodeJS • Quito Ecuador
+* Bajo licencia MIT (https://github.com/DesarrolloWebNodeJS/desarrollowebnodejs.github.io/blob/master/LICENCIA)
+* Para contacto y soporte: https://desarrollowebnodejs.github.io
 */
 
 module.exports = function(grunt) {
@@ -18,8 +18,8 @@ module.exports = function(grunt) {
 		'*\n' +
 		'* <%= leerJson.description %>\n' +
 		'*\n' +
-		'* Copyright (c) 2017 <%= leerJson.author %> \n' +
-		'* Bajo licencia MIT (https://github.com/fizzvr/fizzvr.github.io/blob/master/LICENCIA)\n' + 
+		'* Copyright (c) 2017 Desarrollo Web NodeJS • Quito Ecuador \n' +
+		'* Bajo licencia MIT (https://github.com/DesarrolloWebNodeJS/desarrollowebnodejs.github.io/blob/master/LICENCIA)\n' + 
 		'* Contacto / Soporte: <%= leerJson.homepage %>\n' +                    
 		'*/\n\n',
 		watch: {
