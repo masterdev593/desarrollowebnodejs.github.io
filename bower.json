@@ -20,6 +20,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
     "tether": "^1.4.0",
-    "jquery.easing": "jquery-easing-original#^1.4.1"
+    "jquery.easing": "jquery-easing-original#^1.4.1",
+    "moment": "^2.17.1"
   }
 }
