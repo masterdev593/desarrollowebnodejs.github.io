@@ -8,7 +8,7 @@ author:
     github_username:  fizzvr
 disqus:
 repository: DesarrolloWebNodeJS/desarrollowebnodejs.github.io
-google_analytics: A-222234
+google_analytics: UA-90950804-1
 rss: true
 permalink: /2033/:categories/:title/
 paginate: 1
