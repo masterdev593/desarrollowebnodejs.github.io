@@ -27,4 +27,28 @@ function init() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+    var soundList = [
+        '1.mp3',
+        '2.mp3',
+        '3.mp3'
+    ];
+    var isPlay = true;
+    var audio = document.createElement('audio');
+    audio.addEventListener('ended', pick);
+    audio.volume = 0.5;
+    function pick() {
+        audio.src = 'ivr/audio/' + soundList[Math.floor(Math.random() * 3)];
+        audio.play();
+    }
+    pick();
+
+    $("#PlayPause").click(function() {
+        isPlay 
+            ? $(this).children('i').removeClass('fa fa-pause').addClass('fa fa-play-circle-o')
+            : $(this).children('i').removeClass('fa fa-play-circle-o').addClass('fa fa-pause');
+        isPlay ? audio.pause() : audio.play();
+        isPlay = !isPlay;
+    });
+
+    $("#Shuffle").click(pick);
 }
