@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://desarrollowebnodejs.github.io"><img alt="Website" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg"></a>
-  <a href="https://travis-ci.org/fizzvr/fizzvr.github.io"><img alt="Build Status" src="https://travis-ci.org/desarrollowebnodejs/desarrollowebnodejs.github.io.svg?branch=master"></a>
+  <a href="https://travis-ci.org/DesarrolloWebNodeJS/desarrollowebnodejs.github.io"><img alt="Build Status" src="https://travis-ci.org/DesarrolloWebNodeJS/desarrollowebnodejs.github.io.svg?branch=master"></a>
   <a href="http://gruntjs.com/"><img alt="Construido con Grunt" src="https://cdn.gruntjs.com/builtwith.svg"></a>
 
 </p>
@@ -33,12 +33,12 @@
 - [NodeJS](https://nodejs.org/es/) con el paquete [Bower](https://bower.io/) y [Grunt](http://gruntjs.com/)
 
 	```
-	node -v
 	# Verifica NodeJS
-	npm install -g bower
+	node -v
 	# Bower administra las dependencias del lado cliente
-	npm install -g grunt-cli
+	npm install -g bower
 	# Grunt corredor de tareas
+	npm install -g grunt-cli
 	```
 
 ### Desarrollo
