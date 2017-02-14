@@ -2,8 +2,6 @@ $(document).ready(function() {
     init();
 });
 function init() {
-    var now = moment();
-    now.locale('es');
     $('[data-toggle="tooltip"]').tooltip();
     setInterval(function(){
     var now = moment();
