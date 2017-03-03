@@ -26,9 +26,9 @@ function init() {
         event.preventDefault();
     });
     var soundList = [
-        '1.mp3',
-        '2.mp3',
-        '3.mp3'
+        'x.ogg',
+        'y.ogg',
+        'z.ogg'
     ];
     var isPlay = true;
     var audio = document.createElement('audio');
