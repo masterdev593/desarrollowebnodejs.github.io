@@ -82,9 +82,9 @@ module.exports = function(grunt) {
 					notify: false,
 					watchTask: true,
 					server: '_site/',
-					port: 3004,
+					port: 3005,
 					ui: {
-    					port: 4000
+    					port: 4005
 					}
 				}
 			}
