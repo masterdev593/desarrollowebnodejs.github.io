@@ -17,7 +17,7 @@ feed:
     path: feed.xml
 sass:
    style: compressed
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
