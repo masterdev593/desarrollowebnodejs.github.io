@@ -1,6 +1,6 @@
 {
   "name": "desarrollowebnodejs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Desarrollo Web NodeJS en Quito Ecuador Desarrollo Diseño Fotografía Asistencia Expertos Móvil y Web",
   "homepage": "https://desarrollowebnodejs.github.io",
   "url": "https://github.com/DesarrolloWebNodeJS/desarrollowebnodejs.github.io",
@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=6.1",
+    "node": ">=8.9",
     "npm": ">=5.3"
   },
   "main": "Gruntfile.js",
@@ -29,7 +29,7 @@
     "bower": "^1.8.2"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
+    "eslint": "^4.15.0",
     "grunt-contrib-watch": "^1.0.0",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"
