@@ -29,7 +29,7 @@
     "bower": "^1.8.2"
   },
   "devDependencies": {
-    "eslint": "^4.15.0",
+    "eslint": "^4.18.2",
     "grunt-contrib-watch": "^1.0.0",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"
